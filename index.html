@@ -1,1235 +1,755 @@
 <!DOCTYPE html>
-<!-- saved from url=(0057)https://8ef0ce78-a015-4e26-833e-7dd301a9c521.powerads.me/ -->
-<html lang="en" dir="ltr" style="scroll-behavior: smooth;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Business Globalizer — US LLC, EIN &amp; Bank Account. Launched Remotely.</title>
-  <meta name="description" content="We handle your complete US business setup — LLC, EIN, registered agent, and banking — so you can invoice, sell, and grow without ever visiting the US. IRS CAA Certified.">
-  <link rel="preconnect" href="https://fonts.googleapis.com/">
-  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-  <link href="./Business Globalizer — US LLC, EIN &amp; Bank Account. Launched Remotely._files/css2" rel="stylesheet">
-  <script src="./Business Globalizer — US LLC, EIN &amp; Bank Account. Launched Remotely._files/gsap.min.js.download"></script>
-  <script src="./Business Globalizer — US LLC, EIN &amp; Bank Account. Launched Remotely._files/ScrollTrigger.min.js.download"></script>
-  <noscript><style>.gsap-animate{opacity:1!important;transform:none!important}</style></noscript>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML Preview Dashboard</title>
   <style>
-    .gsap-animate{opacity:1;transform:none}
-
     :root{
-      --navy-900:#060e1e;
-      --navy-800:#0a1628;
-      --navy-700:#0f1f3d;
-      --navy-600:#162a52;
-      --navy-500:#1d3461;
-      --gold:#f0a500;
-      --gold-h:#d99300;
-      --gold-pale:#fff8e6;
-      --gold-dim:rgba(240,165,0,.12);
-      --gold-dim2:rgba(240,165,0,.06);
-      --green:#23C483;
-      --green-h:#12A875;
-      --green-dim:rgba(18,168,117,.12);
-      --white:#ffffff;
-      --gray-50:#f8f9fc;
-      --gray-100:#f1f4f9;
-      --gray-200:#e2e8f0;
-      --gray-300:#cbd5e1;
-      --txt-900:#0a1628;
-      --txt-700:#1e293b;
-      --txt-500:#475569;
-      --txt-400:#64748b;
-      --txt-300:#94a3b8;
-      --border:rgba(0,0,0,.07);
-      --border-md:rgba(0,0,0,.1);
-      --r:12px;
-      --r-lg:18px;
-      --sh-xs:0 1px 3px rgba(0,0,0,.05);
-      --sh-sm:0 2px 12px rgba(0,0,0,.07);
-      --sh-md:0 8px 32px rgba(10,22,40,.12);
-      --sh-lg:0 20px 60px rgba(10,22,40,.18);
-      --sh-green:0 6px 24px rgba(18,168,117,.20);
-      --font:'Plus Jakarta Sans',system-ui,sans-serif;
-      --max:1180px;
+      --bg:#f5f7fb;
+      --panel:#ffffff;
+      --panel-2:#f8fafc;
+      --line:#e5e7eb;
+      --text:#0f172a;
+      --muted:#64748b;
+      --primary:#2563eb;
+      --primary-soft:#dbeafe;
+      --danger:#dc2626;
+      --shadow:0 10px 30px rgba(15, 23, 42, 0.08);
+      --radius:18px;
+      --sidebar-width:320px;
     }
 
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
-    body{font-family:var(--font);color:var(--txt-500);background:var(--white);line-height:1.72;overflow-x:hidden}
-    img{max-width:100%;display:block}
-    a{color:inherit;text-decoration:none}
-    ul{list-style:none}
-    button{cursor:pointer;font-family:inherit;border:none;background:none}
-
-    ::-webkit-scrollbar{width:6px}
-    ::-webkit-scrollbar-track{background:var(--navy-800)}
-    ::-webkit-scrollbar-thumb{background:var(--green);border-radius:99px}
-    ::selection{background:var(--green);color:#fff}
-    :focus-visible{outline:2px solid var(--green);outline-offset:3px;border-radius:4px}
-
-    /* ── TOP LINE ── */
-    .top-line{position:fixed;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--green),#6EE7B7 50%,var(--green));z-index:1001}
-
-    /* ── NAV ── */
-    .nav{
-      position:fixed;top:3px;left:0;right:0;z-index:1000;
-      background:rgba(10,22,40,.93);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
-      border-bottom:1px solid rgba(255,255,255,.07);transition:background .3s,box-shadow .3s;
-    }
-    .nav.scrolled{background:rgba(6,14,30,.97);box-shadow:0 4px 28px rgba(0,0,0,.4)}
-    .nav-inner{
-      max-width:var(--max);margin:0 auto;padding:0 1.75rem;
-      height:66px;display:flex;align-items:center;justify-content:space-between;gap:1rem;
-    }
-    .nav-logo img{height:36px;width:auto;object-fit:contain}
-    .nav-links{display:flex;align-items:center;gap:1.75rem}
-    .nav-links a{font-size:.84rem;font-weight:500;color:rgba(255,255,255,.65);letter-spacing:.01em;transition:color .2s;white-space:nowrap}
-    .nav-links a:hover{color:#fff}
-    .nav-cta{
-      font-size:.84rem;font-weight:700;color:#fff;
-      background:linear-gradient(135deg,var(--green),var(--green-h));
-      padding:.52rem 1.25rem;border-radius:8px;border:none;cursor:pointer;
-      transition:all .3s;box-shadow:var(--sh-green);white-space:nowrap;text-decoration:none;
-    }
-    .nav-cta:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(18,168,117,.35)}
-    .hamburger{display:none;flex-direction:column;gap:5px;padding:6px;background:none;border:none;cursor:pointer}
-    .hamburger span{display:block;width:21px;height:2px;background:var(--green);border-radius:2px;transition:all .3s}
-    .hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
-    .hamburger.open span:nth-child(2){opacity:0;transform:scaleX(0)}
-    .hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-    .mob-nav{
-      display:none;position:fixed;inset:69px 0 0;background:rgba(6,14,30,.98);
-      backdrop-filter:blur(20px);z-index:999;
-      flex-direction:column;align-items:center;justify-content:center;gap:1.5rem;
-    }
-    .mob-nav.open{display:flex}
-    .mob-nav a{font-size:1.2rem;font-weight:700;color:rgba(255,255,255,.78);transition:color .2s}
-    .mob-nav a:hover{color:var(--green)}
-    .mob-nav .mob-cta{
-      margin-top:.5rem;font-weight:700;font-size:1rem;color:#fff;
-      background:linear-gradient(135deg,var(--green),var(--green-h));
-      padding:.9rem 2.5rem;border-radius:8px;
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background:linear-gradient(180deg,#eef3ff 0%, #f7f9fc 100%);
+      color:var(--text);
     }
 
-    /* ── BUTTONS ── */
+    .app{
+      display:grid;
+      grid-template-columns:var(--sidebar-width) 1fr;
+      height:100vh;
+      gap:18px;
+      padding:18px;
+    }
+
+    .sidebar,
+    .main{
+      background:rgba(255,255,255,0.9);
+      backdrop-filter:blur(8px);
+      border:1px solid rgba(255,255,255,0.7);
+      border-radius:24px;
+      box-shadow:var(--shadow);
+      min-height:0;
+    }
+
+    .sidebar{
+      display:flex;
+      flex-direction:column;
+      overflow:hidden;
+    }
+
+    .brand{
+      padding:22px 22px 16px;
+      border-bottom:1px solid var(--line);
+      background:linear-gradient(135deg,#ffffff 0%, #f8fbff 100%);
+    }
+
+    .brand-top{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      margin-bottom:14px;
+    }
+
+    .logo{
+      width:44px;
+      height:44px;
+      border-radius:14px;
+      background:linear-gradient(135deg,#2563eb,#7c3aed);
+      display:grid;
+      place-items:center;
+      color:#fff;
+      font-weight:800;
+      letter-spacing:.5px;
+      flex-shrink:0;
+    }
+
+    .brand h1{
+      margin:0;
+      font-size:20px;
+      line-height:1.1;
+    }
+
+    .brand p{
+      margin:4px 0 0;
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    .search-wrap{
+      position:relative;
+    }
+
+    .search{
+      width:100%;
+      height:46px;
+      border:1px solid var(--line);
+      border-radius:14px;
+      outline:none;
+      padding:0 14px 0 44px;
+      font-size:14px;
+      background:#fff;
+      transition:.2s ease;
+    }
+
+    .search:focus{
+      border-color:#bfdbfe;
+      box-shadow:0 0 0 4px rgba(37,99,235,.08);
+    }
+
+    .search-icon{
+      position:absolute;
+      left:14px;
+      top:50%;
+      transform:translateY(-50%);
+      color:var(--muted);
+      font-size:15px;
+      pointer-events:none;
+    }
+
+    .meta{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:14px 22px;
+      border-bottom:1px solid var(--line);
+      color:var(--muted);
+      font-size:13px;
+      background:var(--panel);
+    }
+
+    .badge{
+      padding:6px 10px;
+      border-radius:999px;
+      background:var(--primary-soft);
+      color:var(--primary);
+      font-weight:600;
+      font-size:12px;
+    }
+
+    .list{
+      flex:1;
+      overflow:auto;
+      padding:14px;
+    }
+
+    .empty-list{
+      padding:24px 14px;
+      text-align:center;
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    .item{
+      display:flex;
+      align-items:flex-start;
+      gap:12px;
+      padding:14px;
+      margin-bottom:10px;
+      border:1px solid transparent;
+      border-radius:18px;
+      cursor:pointer;
+      transition:.2s ease;
+      background:#fff;
+    }
+
+    .item:hover{
+      transform:translateY(-1px);
+      border-color:#dbeafe;
+      background:#fbfdff;
+      box-shadow:0 6px 20px rgba(37,99,235,.06);
+    }
+
+    .item.active{
+      background:linear-gradient(180deg,#eff6ff 0%, #f8fbff 100%);
+      border-color:#bfdbfe;
+      box-shadow:0 8px 20px rgba(37,99,235,.08);
+    }
+
+    .item-icon{
+      width:42px;
+      height:42px;
+      border-radius:12px;
+      background:#eef2ff;
+      color:#4338ca;
+      display:grid;
+      place-items:center;
+      font-size:15px;
+      flex-shrink:0;
+      font-weight:700;
+    }
+
+    .item-body{
+      min-width:0;
+      flex:1;
+    }
+
+    .item-title{
+      font-size:15px;
+      font-weight:700;
+      line-height:1.3;
+      margin:0 0 5px;
+      word-break:break-word;
+    }
+
+    .item-desc{
+      font-size:12px;
+      color:var(--muted);
+      line-height:1.45;
+      margin:0 0 8px;
+    }
+
+    .item-meta{
+      display:flex;
+      gap:8px;
+      flex-wrap:wrap;
+    }
+
+    .pill{
+      font-size:11px;
+      color:#475569;
+      background:#f1f5f9;
+      border:1px solid #e2e8f0;
+      padding:4px 8px;
+      border-radius:999px;
+    }
+
+    .main{
+      display:flex;
+      flex-direction:column;
+      overflow:hidden;
+    }
+
+    .toolbar{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      padding:16px 18px;
+      border-bottom:1px solid var(--line);
+      min-height:80px;
+      background:linear-gradient(180deg,#ffffff 0%, #fbfdff 100%);
+    }
+
+    .toolbar-left{
+      min-width:0;
+      flex:1;
+    }
+
+    .title-row{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-bottom:6px;
+    }
+
+    .page-title{
+      margin:0;
+      font-size:22px;
+      line-height:1.2;
+    }
+
+    .subinfo{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    .toolbar-actions{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+    }
+
+    .btn{
+      height:42px;
+      border:none;
+      outline:none;
+      cursor:pointer;
+      border-radius:12px;
+      padding:0 14px;
+      font-weight:700;
+      font-size:14px;
+      transition:.2s ease;
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+    }
+
+    .btn:hover{
+      transform:translateY(-1px);
+    }
+
     .btn-primary{
-      display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
-      font-family:var(--font);font-size:.97rem;font-weight:700;color:#fff;
-      background:linear-gradient(135deg,var(--green) 0%,var(--green-h) 100%);
-      min-height:56px;padding:.88rem 2rem;border-radius:10px;border:none;
-      cursor:pointer;transition:all .3s;box-shadow:var(--sh-green);text-decoration:none;white-space:nowrap;
-      position:relative;overflow:hidden;
-    }
-    .btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 32px rgba(18,168,117,.30)}
-    .btn-primary.lg{font-size:1.02rem;padding:.98rem 2.25rem}
-    .btn-ghost{
-      display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
-      font-family:var(--font);font-size:.97rem;font-weight:600;color:rgba(255,255,255,.85);
-      background:transparent;min-height:56px;padding:.88rem 2rem;border-radius:10px;
-      border:1.5px solid rgba(255,255,255,.22);cursor:pointer;
-      transition:all .3s;text-decoration:none;white-space:nowrap;
-    }
-    .btn-ghost:hover{border-color:rgba(255,255,255,.55);color:#fff;background:rgba(255,255,255,.07);transform:translateY(-2px)}
-    .btn-ghost.lg{font-size:1.02rem;padding:.98rem 2.25rem}
-
-    /* ── LAYOUT ── */
-    .section{padding:110px 1.5rem}
-    .section.bg-gray{background:var(--gray-50)}
-    .section.bg-white{background:var(--white)}
-    .section.bg-navy{background:var(--navy-800)}
-    .section.bg-navy-deep{background:var(--navy-900)}
-    .wrap{max-width:var(--max);margin:0 auto}
-
-    /* ── TYPE ── */
-    .eyebrow{
-      display:inline-flex;align-items:center;gap:.45rem;margin-bottom:.85rem;
-      font-size:.7rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--green);
-    }
-    .eyebrow-dot{width:5px;height:5px;border-radius:50%;background:var(--green);flex-shrink:0}
-
-    h1.hero-h1{
-      font-size:clamp(2.6rem,5.2vw,4.6rem);font-weight:800;
-      color:#fff;line-height:1.07;letter-spacing:-.035em;margin-bottom:1.25rem;
-    }
-    h1.hero-h1 .line-main{display:block;font-size:1.13em;font-weight:800}
-    h1.hero-h1 .line-paid{display:block;font-weight:600;font-size:.88em}
-    h1.hero-h1 .line-comply{display:block;font-weight:800;font-size:.92em}
-    h1.hero-h1 .hi{
-      background:linear-gradient(90deg,var(--green) 0%,#6EE7B7 100%);
-      -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
-    }
-    h2.sh{
-      font-size:clamp(1.75rem,2.8vw,2.55rem);font-weight:800;
-      color:var(--txt-900);line-height:1.15;letter-spacing:-.025em;margin-bottom:.75rem;
-    }
-    h2.sh span{color:var(--green)}
-    h2.sh.onnavy{color:#fff}
-    h3.card-title{font-size:1rem;font-weight:700;color:var(--txt-900);line-height:1.35;margin-bottom:.45rem}
-    h3.card-title.onnavy{color:#fff}
-    p.sec-sub{font-size:1rem;color:var(--txt-400);line-height:1.8;max-width:540px}
-    p.sec-sub.onnavy{color:rgba(255,255,255,.5)}
-    p.card-body{font-size:.86rem;color:var(--txt-400);line-height:1.78;max-width:720px}
-    p.card-body.onnavy{color:rgba(255,255,255,.45)}
-    .sec-head{margin-bottom:3.25rem}
-    .sec-head.center{text-align:center}
-    .sec-head.center .sec-sub{margin:0 auto}
-    .sec-head.center .eyebrow{justify-content:center}
-
-    /* ── HERO ── */
-    .hero{
-      min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;
-      padding:140px 1.5rem 100px;text-align:center;position:relative;overflow:hidden;
-      background:linear-gradient(160deg,var(--navy-900) 0%,var(--navy-800) 45%,var(--navy-700) 80%,var(--navy-900) 100%);
-    }
-    .hero-shimmer{
-      position:absolute;inset:0;pointer-events:none;
-      background:linear-gradient(125deg,transparent 0%,transparent 38%,rgba(35,196,131,.04) 45%,rgba(255,255,255,.02) 50%,rgba(35,196,131,.03) 55%,transparent 62%,transparent 100%);
-      background-size:300% 300%;animation:shimmer 9s ease-in-out infinite;
-    }
-    @keyframes shimmer{0%{background-position:0% 0%}50%{background-position:100% 100%}100%{background-position:0% 0%}}
-    .hero-grid-bg{
-      position:absolute;inset:0;pointer-events:none;
-      background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);
-      background-size:56px 56px;
-    }
-    .hero-glow{
-      position:absolute;width:900px;height:900px;border-radius:50%;
-      background:radial-gradient(circle,rgba(35,196,131,.06) 0%,transparent 65%);
-      top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none;
-      animation:glowpulse 7s ease-in-out infinite;
-    }
-    @keyframes glowpulse{0%,100%{opacity:.7;transform:translate(-50%,-50%) scale(1)}50%{opacity:1;transform:translate(-50%,-50%) scale(1.08)}}
-
-    /* IRS watermark */
-    .hero-irs-watermark{
-      position:absolute;bottom:60px;right:60px;
-      font-size:96px;font-weight:900;color:rgba(255,255,255,.05);
-      letter-spacing:-.04em;pointer-events:none;user-select:none;
-      line-height:1;
-    }
-    .hero-flag-line{
-      position:absolute;bottom:0;left:0;right:0;height:4px;
-      background:linear-gradient(90deg,#B22234 0%,#B22234 33%,#fff 33%,#fff 66%,#3C3B6E 66%,#3C3B6E 100%);
-      opacity:.12;pointer-events:none;
+      background:var(--primary);
+      color:#fff;
+      box-shadow:0 10px 20px rgba(37,99,235,.18);
     }
 
-    .hero-inner{position:relative;z-index:2;max-width:860px;margin:0 auto}
-    .hero-logo{margin-bottom:2.25rem;will-change:transform}
-    .hero-logo img{height:54px;width:auto;margin:0 auto;filter:brightness(1.08) drop-shadow(0 4px 20px rgba(35,196,131,.22));}
-    .hero-badge{
-      display:inline-flex;align-items:center;gap:.45rem;
-      background:rgba(35,196,131,.1);border:1px solid rgba(35,196,131,.28);
-      color:#6EE7B7;font-size:.72rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;
-      padding:.35rem .95rem;border-radius:99px;margin-bottom:1.5rem;will-change:transform;
+    .btn-light{
+      background:#fff;
+      color:var(--text);
+      border:1px solid var(--line);
     }
-    .badge-dot{width:6px;height:6px;border-radius:50%;background:var(--green);animation:bdot 2s ease-in-out infinite}
-    @keyframes bdot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.7)}}
 
-    .hero-sub{
-      font-size:clamp(.97rem,1.5vw,1.15rem);color:rgba(255,255,255,.6);
-      max-width:680px;margin:0 auto 2.4rem;line-height:1.4;will-change:transform;
+    .preview-shell{
+      position:relative;
+      flex:1;
+      min-height:0;
+      background:#edf2f7;
     }
-    .hero-sub .sub-line{display:block}
-    .hero-ctas{display:flex;gap:.9rem;align-items:center;justify-content:center;flex-wrap:wrap;margin-bottom:2rem;will-change:transform}
-    .hero-scroll{
-      position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);
-      display:flex;flex-direction:column;align-items:center;gap:.3rem;
-      color:rgba(255,255,255,.18);font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;
+
+    iframe{
+      width:100%;
+      height:100%;
+      border:none;
+      background:#fff;
+      display:block;
     }
-    .scroll-track{width:18px;height:30px;border:1.5px solid rgba(255,255,255,.15);border-radius:9px;position:relative}
-    .scroll-nub{position:absolute;top:4px;left:50%;transform:translateX(-50%);width:3px;height:6px;background:var(--green);border-radius:99px;animation:snub 2.2s ease-in-out infinite;}
-    @keyframes snub{0%,100%{top:4px;opacity:1}60%{top:15px;opacity:.3}}
 
-    /* ── TRUST CAPSULES ── */
-    .trust-capsules{background:var(--white);padding:28px 1.5rem;border-bottom:1px solid #E6EDF3;}
-    .trust-capsules-inner{max-width:var(--max);margin:0 auto;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:14px;}
-    .trust-cap{
-      display:flex;align-items:center;gap:.55rem;
-      background:#F6F9FB;border:1px solid #E3E8EF;
-      padding:12px 18px;border-radius:8px;
-      font-size:.82rem;font-weight:600;color:var(--txt-700);
-      transition:box-shadow .25s,transform .25s;
+    .overlay{
+      position:absolute;
+      inset:0;
+      display:none;
+      align-items:center;
+      justify-content:center;
+      padding:24px;
+      z-index:5;
+      background:linear-gradient(180deg,rgba(248,250,252,.92),rgba(241,245,249,.96));
+      text-align:center;
     }
-    .trust-cap:hover{box-shadow:0 4px 16px rgba(0,0,0,.06);transform:translateY(-2px)}
-    .trust-cap svg{width:18px;height:18px;stroke:var(--green);flex-shrink:0}
 
-    /* ── LIVE FEED ── */
-    .live-feed{background:#F9FBFD;padding:20px 1.5rem;border-bottom:1px solid #E6EDF3;}
-    .live-feed-inner{max-width:var(--max);margin:0 auto;}
-    .live-feed-label{font-size:12px;color:var(--txt-400);font-weight:600;letter-spacing:.04em;text-align:center;margin-bottom:10px;}
-    .live-feed-card{
-      background:#fff;border:1px solid #E6EDF3;border-radius:12px;padding:14px 20px;
-      text-align:center;min-height:46px;position:relative;overflow:hidden;
+    .overlay.show{
+      display:flex;
     }
-    .ticker-item{font-size:13px;color:var(--txt-500);transition:opacity .5s;position:absolute;left:0;right:0;padding:0 20px;top:50%;transform:translateY(-50%);}
-    .ticker-item.active{opacity:1;}
-    .ticker-item.hidden{opacity:0;}
-    .ticker-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--green);margin-right:8px;animation:pulse-dot 1.5s ease-in-out infinite;}
-    @keyframes pulse-dot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.7)}}
 
-    /* ── STATS ── */
-    .stats-outer{background:var(--navy-700);border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06)}
-    .stats-grid{max-width:var(--max);margin:0 auto;padding:0 1.5rem;display:grid;grid-template-columns:repeat(4,1fr);}
-    .stat-cell{padding:2rem 1.25rem;text-align:center;position:relative;transition:background .3s}
-    .stat-cell:hover{background:rgba(255,255,255,.03)}
-    .stat-cell+.stat-cell::before{content:'';position:absolute;left:0;top:22%;bottom:22%;width:1px;background:#E6EDF3;opacity:.15}
-    .stat-num{display:block;font-size:44px;font-weight:800;color:var(--green);line-height:1;margin-bottom:.3rem}
-    .stat-label{font-size:14px;font-weight:500;color:rgba(255,255,255,.42);line-height:1.4}
-    .stat-cell.caa{background:rgba(35,196,131,.05);border:1px solid rgba(35,196,131,.15);border-radius:var(--r);margin:1rem .5rem;transition:box-shadow .3s,background .3s}
-    .stat-cell.caa:hover{background:rgba(35,196,131,.08);box-shadow:0 4px 20px rgba(35,196,131,.12)}
-    .caa-badge-wrap{display:flex;align-items:center;justify-content:center;gap:.6rem;margin-bottom:.5rem}
-    .caa-verified-icon{width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,var(--green),#6EE7B7);display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 2px 12px rgba(35,196,131,.4);animation:caapop .6s cubic-bezier(.34,1.56,.64,1) .4s both;}
-    @keyframes caapop{from{opacity:0;transform:scale(.7)}to{opacity:1;transform:scale(1)}}
-    .caa-verified-icon svg{width:16px;height:16px;stroke:var(--navy-800)}
-    .caa-badge{display:inline-flex;align-items:center;gap:.4rem;background:var(--green);color:var(--navy-800);font-size:.78rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;padding:.3rem .85rem;border-radius:99px;}
-    .caa-desc{font-size:.73rem;color:rgba(255,255,255,.38);line-height:1.6;max-width:200px;margin:0 auto}
-
-    /* PLATFORM ROW */
-    .platform-row{max-width:var(--max);margin:0 auto;padding:1.25rem 1.5rem 1.75rem;border-top:1px solid rgba(255,255,255,.06);}
-    .platform-label{font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.25);text-align:center;margin-bottom:1rem}
-    .platform-icons{display:flex;align-items:center;justify-content:center;gap:1rem;flex-wrap:wrap}
-    .platform-pill{display:flex;align-items:center;gap:.45rem;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:8px;padding:.4rem .9rem;font-size:.78rem;font-weight:600;color:rgba(255,255,255,.45);transition:border-color .25s,color .25s,transform .25s,background .25s;}
-    .platform-pill:hover{border-color:rgba(35,196,131,.35);color:rgba(255,255,255,.82);background:rgba(35,196,131,.06);transform:translateY(-2px)}
-    .platform-pill svg{width:16px;height:16px;stroke:rgba(255,255,255,.4)}
-
-    /* ── UNLOCK ── */
-    .unlock-tier-label{font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--txt-300);margin-bottom:1.1rem;display:flex;align-items:center;gap:.6rem;}
-    .unlock-tier-label::after{content:'';flex:1;height:1px;background:var(--gray-200)}
-    .unlock-t1{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:2rem}
-    .unlock-t2{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-    .u-card{
-      background:var(--white);border:1px solid var(--border);border-radius:var(--r);
-      padding:1.9rem 1.8rem;box-shadow:var(--sh-xs);position:relative;overflow:hidden;
-      transition:transform .32s cubic-bezier(.22,.68,0,1.2),box-shadow .32s ease,border-color .25s;
-      will-change:transform;
+    .overlay-card{
+      max-width:600px;
+      width:100%;
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:24px;
+      padding:32px 24px;
+      box-shadow:var(--shadow);
     }
-    .u-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2.5px;background:linear-gradient(90deg,var(--green),#6EE7B7);transform:scaleX(0);transform-origin:left;transition:transform .38s ease;}
-    .u-card:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(0,0,0,.06);border-color:rgba(35,196,131,.2)}
-    .u-card:hover::after{transform:scaleX(1)}
-    .u-card.t2{background:var(--gray-50)}
-    .u-card.t2:hover{background:var(--white)}
-    .u-icon{width:50px;height:50px;border-radius:12px;background:#F1F7F5;border:1px solid rgba(35,196,131,.18);display:flex;align-items:center;justify-content:center;margin-bottom:1rem;transition:transform .3s,box-shadow .3s;}
-    .u-card:hover .u-icon{transform:scale(1.08);box-shadow:0 4px 16px rgba(35,196,131,.18)}
-    .u-icon svg{width:26px;height:26px}
-    .u-card .result-tag{display:inline-block;font-size:.65rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--green);background:var(--green-dim);border-radius:99px;padding:.2rem .65rem;margin-bottom:.65rem;}
 
-    /* ── HOW IT WORKS ── */
-    .how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;position:relative}
-    .how-grid::before{content:'';position:absolute;top:33px;left:calc(16.6% + 1rem);right:calc(16.6% + 1rem);height:1px;background:linear-gradient(90deg,var(--green),rgba(35,196,131,.12));pointer-events:none;z-index:0;}
-    .how-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:2rem 1.7rem;position:relative;z-index:1;transition:transform .32s cubic-bezier(.22,.68,0,1.2),box-shadow .32s ease;will-change:transform;}
-    .how-card:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(0,0,0,.06)}
-    .how-num{width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,var(--green) 0%,#6EE7B7 100%);color:var(--navy-800);font-size:.95rem;font-weight:800;display:flex;align-items:center;justify-content:center;margin-bottom:1.35rem;box-shadow:0 4px 16px rgba(35,196,131,.32);transition:transform .3s,box-shadow .3s;}
-    .how-card:hover .how-num{transform:scale(1.08);box-shadow:0 6px 22px rgba(35,196,131,.45)}
-    .how-card h3{font-size:1.02rem;font-weight:700;color:var(--txt-900);margin-bottom:.6rem}
-    .how-card p{font-size:.86rem;color:var(--txt-400);line-height:1.75}
-    .how-list{margin-top:.95rem;display:flex;flex-direction:column;gap:.45rem}
-    .how-list li{display:flex;align-items:center;gap:.5rem;font-size:.79rem;color:var(--txt-500)}
-    .how-list li svg{width:13px;height:13px;stroke:var(--green);flex-shrink:0}
-    .how-tag{display:inline-block;margin-top:1rem;font-size:.68rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--green);background:var(--green-dim);border-radius:99px;padding:.22rem .75rem;}
-    .how-proof{text-align:center;margin-top:2.25rem;font-size:.86rem;font-weight:600;color:var(--txt-400)}
-    .how-proof span{color:var(--green);font-weight:700}
-
-    /* ── WHO ── */
-    .who-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-    .who-card{background:#fff;border:1px solid #E5EAF0;border-radius:var(--r);padding:24px;transition:box-shadow .3s,transform .3s;will-change:transform;}
-    .who-card:hover{box-shadow:0 12px 32px rgba(0,0,0,.06);transform:translateY(-3px)}
-    .who-icon{width:48px;height:48px;border-radius:10px;background:#F1F7F5;border:1px solid rgba(35,196,131,.18);display:flex;align-items:center;justify-content:center;margin-bottom:.9rem;transition:transform .3s;}
-    .who-card:hover .who-icon{transform:scale(1.08)}
-    .who-icon svg{width:22px;height:22px;stroke:var(--green)}
-    .who-card h3{font-size:.97rem;font-weight:700;color:var(--txt-900);margin-bottom:.45rem}
-    .who-card p{font-size:.83rem;color:var(--txt-500);line-height:1.68}
-
-    /* ── TESTIMONIALS ── */
-    .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-    .t-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:1.9rem;box-shadow:var(--sh-xs);transition:transform .32s cubic-bezier(.22,.68,0,1.2),box-shadow .32s ease;will-change:transform;display:flex;flex-direction:column;}
-    .t-card:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(10,22,40,.10)}
-    .t-result-banner{background:var(--gold-dim2);border:1px solid rgba(240,165,0,.16);border-radius:8px;padding:.65rem .9rem;margin-bottom:1.1rem;}
-    .t-result-banner p{font-size:.83rem;font-weight:700;color:var(--txt-700);line-height:1.45}
-    .t-stars{display:flex;gap:2px;margin-bottom:.95rem}
-    .t-stars svg{width:14px;height:14px;fill:var(--gold)}
-    .t-quote{font-size:.87rem;color:var(--txt-500);line-height:1.86;flex:1;margin-bottom:1.4rem;margin-top:.2rem}
-    .t-quote strong{color:var(--txt-700);font-weight:700}
-    .t-author{display:flex;align-items:center;gap:.75rem;padding-top:1.1rem;border-top:1px solid var(--border)}
-    .t-av{width:40px;height:40px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:.95rem;font-weight:800;color:var(--navy-800);}
-    .t-name{font-size:.85rem;font-weight:700;color:var(--txt-700);line-height:1.2}
-    .t-role{font-size:.74rem;color:var(--txt-400)}
-
-    /* ── WHY US ── */
-    .why-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1rem}
-    .why-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:var(--r);padding:1.55rem 1.3rem;text-align:center;transition:background .3s,border-color .3s,transform .32s cubic-bezier(.22,.68,0,1.2),box-shadow .3s;will-change:transform;}
-    .why-card:hover{background:rgba(255,255,255,.07);border-color:rgba(35,196,131,.22);transform:translateY(-3px);box-shadow:0 12px 32px rgba(0,0,0,.2)}
-    .why-icon{width:46px;height:46px;border-radius:11px;background:rgba(35,196,131,.1);border:1px solid rgba(35,196,131,.2);display:flex;align-items:center;justify-content:center;margin:0 auto .9rem;transition:transform .3s,box-shadow .3s;}
-    .why-card:hover .why-icon{transform:scale(1.1) rotate(-3deg);box-shadow:0 4px 18px rgba(35,196,131,.22)}
-    .why-icon svg{width:22px;height:22px;stroke:var(--green)}
-    .why-card h3{font-size:.9rem;font-weight:700;color:#fff;margin-bottom:.5rem;line-height:1.3}
-    .why-card p{font-size:.78rem;color:rgba(255,255,255,.38);line-height:1.68}
-
-    /* ── FAQ ── */
-    .faq-layout{display:grid;grid-template-columns:1fr 1.9fr;gap:4.5rem;align-items:start}
-    .faq-sticky{position:sticky;top:88px}
-    .faq-sticky .sh{color:var(--txt-900)}
-    .faq-sticky p{font-size:.92rem;color:var(--txt-400);line-height:1.8;margin:.65rem 0 1.6rem}
-    .faq-list{display:flex;flex-direction:column;gap:.55rem}
-    .faq-item{border:1px solid var(--border);border-radius:var(--r);overflow:hidden;transition:border-color .25s,box-shadow .25s}
-    .faq-item.open{border-color:rgba(35,196,131,.3);box-shadow:0 4px 18px rgba(35,196,131,.08)}
-    .faq-btn{display:flex;align-items:center;justify-content:space-between;gap:.9rem;padding:1.1rem 1.4rem;cursor:pointer;width:100%;text-align:left;transition:background .2s;}
-    .faq-btn:hover{background:rgba(35,196,131,.03)}
-    .faq-btn span{font-size:.9rem;font-weight:600;color:var(--txt-900);line-height:1.4}
-    .faq-chev{width:26px;height:26px;border-radius:50%;background:var(--gray-100);flex-shrink:0;display:flex;align-items:center;justify-content:center;transition:background .25s,transform .3s;}
-    .faq-chev svg{width:12px;height:12px;transition:transform .3s;stroke:var(--txt-400)}
-    .faq-item.open .faq-chev{background:var(--green)}
-    .faq-item.open .faq-chev svg{transform:rotate(180deg);stroke:var(--navy-800)}
-    .faq-ans{max-height:0;overflow:hidden;transition:max-height .4s ease}
-    .faq-item.open .faq-ans{max-height:360px}
-    .faq-ans p{padding:.25rem 1.4rem 1.35rem;font-size:.87rem;color:var(--txt-400);line-height:1.9;max-width:62ch}
-    .faq-ans p strong{color:var(--txt-700);font-weight:700}
-
-    /* ── FINAL CTA ── */
-    .final-cta{padding:110px 1.5rem;text-align:center;position:relative;overflow:hidden;background:var(--navy-900);}
-    .final-dots{position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(rgba(255,255,255,.04) 1px,transparent 1px);background-size:28px 28px;}
-    .final-glow{position:absolute;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(35,196,131,.07) 0%,transparent 65%);top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none;animation:glowpulse 7s ease-in-out infinite;}
-    .final-inner{position:relative;z-index:2;max-width:660px;margin:0 auto}
-    .final-eyebrow{display:inline-flex;align-items:center;gap:.4rem;background:rgba(35,196,131,.1);border:1px solid rgba(35,196,131,.22);color:#6EE7B7;font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.32rem .88rem;border-radius:99px;margin-bottom:1.4rem;will-change:transform;}
-    .final-cta h2{font-size:clamp(1.9rem,3.5vw,3.1rem);font-weight:800;color:#fff;line-height:1.1;letter-spacing:-.028em;margin-bottom:1rem;will-change:transform;}
-    .final-cta h2 span{background:linear-gradient(90deg,var(--green),#6EE7B7);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
-    .final-cta p{font-size:1rem;color:rgba(255,255,255,.52);line-height:1.78;margin-bottom:2.25rem;will-change:transform}
-    .final-btns{display:flex;gap:.9rem;justify-content:center;flex-wrap:wrap;margin-bottom:1.75rem;will-change:transform}
-    .final-bullets{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:.68rem;will-change:transform}
-    .f-bullet{display:flex;align-items:center;gap:.4rem;font-size:.76rem;color:rgba(255,255,255,.32);font-weight:500}
-    .f-bullet svg{width:13px;height:13px;flex-shrink:0;opacity:.85}
-
-    /* ── FOOTER ── */
-    .footer{background:#030810;padding:48px 1.5rem 28px;border-top:1px solid rgba(255,255,255,.05)}
-    .footer-inner{max-width:var(--max);margin:0 auto}
-    .footer-top{display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:2rem;padding-bottom:2rem;border-bottom:1px solid rgba(255,255,255,.05);}
-    .footer-brand img{height:32px;width:auto;margin-bottom:.75rem;filter:brightness(.85)}
-    .footer-tagline{font-size:.8rem;color:rgba(255,255,255,.28);max-width:240px;line-height:1.65}
-    .footer-links{display:flex;align-items:center;flex-wrap:wrap;gap:1.5rem}
-    .footer-links a{font-size:.8rem;color:rgba(255,255,255,.35);transition:color .2s;white-space:nowrap}
-    .footer-links a:hover{color:rgba(255,255,255,.78)}
-    .footer-bottom{padding-top:1.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem}
-    .footer-trust{font-size:.72rem;font-weight:600;color:rgba(255,255,255,.22);letter-spacing:.04em}
-    .footer-copy{font-size:.74rem;color:rgba(255,255,255,.18)}
-    .footer-copy a{color:rgba(35,196,131,.5);transition:color .2s}
-    .footer-copy a:hover{color:var(--green)}
-
-    /* ── SECTION FADE-IN ── */
-    .fade-in-section{opacity:0;transform:translateY(24px);transition:opacity .55s ease,transform .55s ease}
-    .fade-in-section.is-visible{opacity:1;transform:translateY(0)}
-
-    /* ── RESPONSIVE ── */
-    @media(max-width:1080px){
-      .unlock-t1,.unlock-t2{grid-template-columns:repeat(2,1fr)}
-      .why-grid{grid-template-columns:repeat(3,1fr)}
+    .overlay-icon{
+      width:64px;
+      height:64px;
+      margin:0 auto 16px;
+      border-radius:18px;
+      display:grid;
+      place-items:center;
+      font-size:28px;
+      font-weight:800;
+      background:#eef2ff;
+      color:#4338ca;
     }
-    @media(max-width:900px){
-      .stats-grid{grid-template-columns:repeat(2,1fr)}
-      .stat-cell+.stat-cell::before{display:none}
-      .stat-cell:nth-child(3){border-top:1px solid rgba(255,255,255,.07)}
-      .stat-cell.caa{grid-column:1/-1;margin:0 .5rem .75rem}
-      .how-grid{grid-template-columns:1fr}
-      .how-grid::before{display:none}
-      .who-grid{grid-template-columns:repeat(2,1fr)}
-      .testi-grid{grid-template-columns:1fr}
-      .faq-layout{grid-template-columns:1fr;gap:2.25rem}
-      .faq-sticky{position:static}
-      .why-grid{grid-template-columns:repeat(2,1fr)}
+
+    .overlay.error .overlay-icon{
+      background:#fee2e2;
+      color:var(--danger);
     }
-    @media(max-width:768px){
-      .section{padding:60px 1.25rem}
-      .nav-inner{padding:0 1.25rem}
-      .nav-links,.nav-cta{display:none}
-      .hamburger{display:flex}
-      .hero{padding:120px 1.25rem 80px}
-      .hero-logo img{height:44px}
-      .hero-ctas,.final-btns{flex-direction:column;align-items:stretch}
-      .hero-ctas a,.final-btns a{text-align:center;justify-content:center}
-      .unlock-t1,.unlock-t2{grid-template-columns:1fr}
-      .who-grid{grid-template-columns:1fr}
-      .footer-top{flex-direction:column;align-items:flex-start}
-      .footer-bottom{flex-direction:column;text-align:center}
-      .stats-grid{grid-template-columns:1fr 1fr}
-      .why-grid{grid-template-columns:1fr}
-      h1.hero-h1{font-size:clamp(1.9rem,7vw,2.7rem)}
-      .trust-capsules-inner{gap:10px}
-      .trust-cap{padding:10px 14px;font-size:.78rem}
-      .hero-irs-watermark{display:none}
+
+    .overlay h3{
+      margin:0 0 10px;
+      font-size:22px;
     }
-    @media(max-width:480px){
-      h2.sh{font-size:1.65rem}
-      .platform-icons{gap:.5rem}
-      .why-grid{grid-template-columns:1fr}
+
+    .overlay p{
+      margin:0;
+      color:var(--muted);
+      line-height:1.65;
+      font-size:14px;
+      word-break:break-word;
+    }
+
+    .footer-note{
+      padding:12px 18px;
+      border-top:1px solid var(--line);
+      color:var(--muted);
+      font-size:12px;
+      background:#fff;
+    }
+
+    .mobile-toggle{
+      display:none;
+      position:fixed;
+      left:14px;
+      bottom:14px;
+      z-index:40;
+      width:54px;
+      height:54px;
+      border:none;
+      border-radius:16px;
+      background:var(--primary);
+      color:#fff;
+      box-shadow:0 14px 30px rgba(37,99,235,.24);
+      font-size:20px;
+      cursor:pointer;
+    }
+
+    @media (max-width: 980px){
+      .app{
+        grid-template-columns:1fr;
+        padding:12px;
+      }
+
+      .sidebar{
+        position:fixed;
+        inset:12px auto 12px 12px;
+        width:min(88vw,340px);
+        z-index:50;
+        transform:translateX(-110%);
+        transition:.25s ease;
+      }
+
+      .sidebar.open{
+        transform:translateX(0);
+      }
+
+      .mobile-toggle{
+        display:grid;
+        place-items:center;
+      }
+
+      .toolbar{
+        padding-left:58px;
+      }
     }
   </style>
 </head>
-<body style="opacity: 1;" cz-shortcut-listen="true">
+<body>
 
-<div class="top-line" aria-hidden="true"></div>
+  <button class="mobile-toggle" id="mobileToggle">☰</button>
 
-<!-- ══ NAV ══ -->
-<header class="nav" id="mainNav">
-  <div class="nav-inner">
-    <a href="https://businessglobalizer.com/" aria-label="Business Globalizer home">
-      <img src="./Business Globalizer — US LLC, EIN &amp; Bank Account. Launched Remotely._files/bg-logo-1773588696.webp" alt="Business Globalizer" style="height:34px;width:auto;object-fit:contain">
-    </a>
-    <nav class="nav-links" aria-label="Primary">
-      <a href="https://8ef0ce78-a015-4e26-833e-7dd301a9c521.powerads.me/#how-it-works">How It Works</a>
-      <a href="https://8ef0ce78-a015-4e26-833e-7dd301a9c521.powerads.me/#who">Who It's For</a>
-      <a href="https://8ef0ce78-a015-4e26-833e-7dd301a9c521.powerads.me/#faq">FAQ</a>
-    </nav>
-    <a href="https://8ef0ce78-a015-4e26-833e-7dd301a9c521.powerads.me/#consultation" class="nav-cta">Free Consultation</a>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-top">
+          <div class="logo">HP</div>
+          <div>
+            <h1>HTML Dashboard</h1>
+            <p>Preview, manage and open your live pages</p>
+          </div>
+        </div>
+
+        <div class="search-wrap">
+          <span class="search-icon">⌕</span>
+          <input id="searchInput" class="search" type="text" placeholder="Search pages..." />
+        </div>
+      </div>
+
+      <div class="meta">
+        <span id="resultCount">0 pages</span>
+        <span class="badge">Live Preview</span>
+      </div>
+
+      <div class="list" id="pageList"></div>
+    </aside>
+
+    <main class="main">
+      <div class="toolbar">
+        <div class="toolbar-left">
+          <div class="title-row">
+            <h2 class="page-title" id="pageTitle">Select a page</h2>
+            <span class="badge" id="pageStatus">Idle</span>
+          </div>
+          <div class="subinfo">
+            <span id="pageUrl">No file selected</span>
+            <span id="pageTag">Ready</span>
+          </div>
+        </div>
+
+        <div class="toolbar-actions">
+          <button class="btn btn-light" id="refreshBtn">↻ Refresh</button>
+          <button class="btn btn-light" id="copyBtn">⧉ Copy Path</button>
+          <button class="btn btn-primary" id="openBtn">↗ Open In New Tab</button>
+        </div>
+      </div>
+
+      <div class="preview-shell">
+        <iframe id="previewFrame" title="HTML preview"></iframe>
+
+        <div class="overlay show" id="loadingOverlay">
+          <div class="overlay-card">
+            <div class="overlay-icon">⌛</div>
+            <h3>Loading preview...</h3>
+            <p>Please wait while the selected page is being opened inside the dashboard.</p>
+          </div>
+        </div>
+
+        <div class="overlay" id="emptyOverlay">
+          <div class="overlay-card">
+            <div class="overlay-icon">📄</div>
+            <h3>No page selected</h3>
+            <p>Choose any HTML page from the left sidebar to preview it here.</p>
+          </div>
+        </div>
+
+        <div class="overlay error" id="errorOverlay">
+          <div class="overlay-card">
+            <div class="overlay-icon">!</div>
+            <h3>Preview could not be loaded</h3>
+            <p id="errorText">
+              File path may be wrong, file may not exist, or your local folder structure does not match the configured URL.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-note">
+        Tip: make sure every configured file path is correct. Example: <strong>pages/landing.html</strong>
+      </div>
+    </main>
   </div>
-</header>
 
-<div class="mob-nav" id="mobNav" aria-hidden="true">
-  <a href="https://8ef0ce78-a015-4e26-833e-7dd301a9c521.powerads.me/#how-it-works" class="mob-link">How It Works</a>
-  <a href="https://8ef0ce78-a015-4e26-833e-7dd301a9c521.powerads.me/#who" class="mob-link">Who It's For</a>
-  <a href="https://8ef0ce78-a015-4e26-833e-7dd301a9c521.powerads.me/#faq" class="mob-link">FAQ</a>
-  <a href="https://8ef0ce78-a015-4e26-833e-7dd301a9c521.powerads.me/#consultation" class="mob-cta mob-link">Free Consultation</a>
-</div>
+  <script>
+    /*
+      ==============================
+      PAGE CONFIG
+      ==============================
+      url path gula nijer moto update koro.
+      ei url gula index.html er relative path hobe.
+    */
+    const PAGE_DATA = [
+      {
+        name: "Your US LLC, EIN & Business",
+        url: "index2.html",
+        description: "Main hero landing page with sections and CTA blocks.",
+        category: "Landing",
+        tag: "Featured"
+      },
+      {
+        name: "Portfolio",
+        url: "Business Globalizer — US LLC, EIN & Bank Account. Launched Remotely (2).html",
+        description: "Portfolio showcase layout with grid and project cards.",
+        category: "Showcase",
+        tag: "Creative"
+      },
+      {
+        name: "Product Page",
+        url: "Business Globalizer — US LLC, EIN & Bank Account.html",
+        description: "Single product or service detail page preview.",
+        category: "Product",
+        tag: "Sales"
+      },
+         {
+        name: "Product Page",
+        url: "Business Globalizer — US LLC, EIN & Bank Account. Launched Remotely (1).html",
+        description: "Single product or service detail page preview.",
+        category: "Product",
+        tag: "Sales"
+      },
+{
+        name: "Product Page",
+        url: "Business Globalizer — Launch Your US Business Remotely.html",
+        description: "Single product or service detail page preview.",
+        category: "Product",
+        tag: "Sales"
+      }
+    ];
 
-<main>
+    const pageList = document.getElementById("pageList");
+    const searchInput = document.getElementById("searchInput");
+    const resultCount = document.getElementById("resultCount");
+    const previewFrame = document.getElementById("previewFrame");
+    const pageTitle = document.getElementById("pageTitle");
+    const pageUrl = document.getElementById("pageUrl");
+    const pageTag = document.getElementById("pageTag");
+    const pageStatus = document.getElementById("pageStatus");
+    const openBtn = document.getElementById("openBtn");
+    const refreshBtn = document.getElementById("refreshBtn");
+    const copyBtn = document.getElementById("copyBtn");
+    const mobileToggle = document.getElementById("mobileToggle");
+    const sidebar = document.getElementById("sidebar");
 
-<!-- ══ HERO ══ -->
-<section class="hero" id="hero" aria-labelledby="heroH1">
-  <div class="hero-grid-bg" aria-hidden="true"></div>
-  <div class="hero-shimmer" aria-hidden="true"></div>
-  <div class="hero-glow" aria-hidden="true"></div>
-  <div class="hero-irs-watermark" aria-hidden="true">IRS</div>
-  <div class="hero-flag-line" aria-hidden="true"></div>
-  <div class="hero-inner">
-    <div class="hero-logo gsap-animate" id="aLogo" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-      <img src="./Business Globalizer — US LLC, EIN &amp; Bank Account. Launched Remotely._files/bg-logo-1773588696.webp" alt="Business Globalizer">
-    </div>
-    <div class="hero-badge gsap-animate" id="aBadge" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-      <span class="badge-dot"></span>
-      IRS CAA Certified &nbsp;·&nbsp; 5,000+ Remote Founders Served
-    </div>
-    <h1 class="hero-h1 gsap-animate" id="heroH1" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-      <span class="line-main">Your US LLC, EIN &amp; Business</span>
-      <span class="line-paid">Bank Account — <span class="hi">Launched</span></span>
-      <span class="line-comply"><span class="hi">Remotely in Days.</span></span>
-    </h1>
-    <p class="hero-sub gsap-animate" id="aHeroSub" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-      <span class="sub-line">From LLC formation to EIN, banking, and ongoing compliance —</span>
-      <span class="sub-line">we handle everything so you can focus on growing. No US travel. No confusion. Just results.</span>
-    </p>
-    <div class="hero-ctas gsap-animate" id="aHeroCtas" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-      <a href="https://8ef0ce78-a015-4e26-833e-7dd301a9c521.powerads.me/#consultation" class="btn-primary lg">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
-        Book Free Consultation
-      </a>
-      <a href="https://businessglobalizer.com/" class="btn-ghost lg">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
-        Start Your US Business
-      </a>
-    </div>
-  </div>
-  <div class="hero-scroll" aria-hidden="true">
-    <div class="scroll-track"><div class="scroll-nub"></div></div>
-    <span>Scroll</span>
-  </div>
-</section>
+    const loadingOverlay = document.getElementById("loadingOverlay");
+    const emptyOverlay = document.getElementById("emptyOverlay");
+    const errorOverlay = document.getElementById("errorOverlay");
+    const errorText = document.getElementById("errorText");
 
-<!-- ══ TRUST CAPSULES ══ -->
-<div class="trust-capsules" role="complementary" aria-label="Trust indicators">
-  <div class="trust-capsules-inner">
-    <div class="trust-cap gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
-      IRS CAA Certified
-    </div>
-    <div class="trust-cap gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-      5,000+ Companies
-    </div>
-    <div class="trust-cap gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="2" y1="20" x2="22" y2="20"></line></svg>
-      100% Remote
-    </div>
-    <div class="trust-cap gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
-      Results in Days
-    </div>
-  </div>
-</div>
+    let currentPage = null;
+    let loadTimer = null;
 
-<!-- ══ LIVE FEED ══ -->
-<div class="live-feed" id="liveFeedSection">
-  <div class="live-feed-inner">
-    <div class="live-feed-label">🌎 Recent Client Success</div>
-    <div class="live-feed-card" id="tickerInner" style="height:46px;">
-      <div class="ticker-item hidden" id="t0"><span class="ticker-dot"></span>🇧🇷 Paulo from Brazil just started his LLC · 2 hours ago</div>
-      <div class="ticker-item hidden" id="t1"><span class="ticker-dot"></span>🇮🇳 Priya from India opened her US bank account · 4 hours ago</div>
-      <div class="ticker-item hidden" id="t2"><span class="ticker-dot"></span>🇩🇪 Stefan from Germany got his EIN · 6 hours ago</div>
-      <div class="ticker-item hidden" id="t3"><span class="ticker-dot"></span>🇵🇭 Maria from Philippines launched her Amazon business · 1 day ago</div>
-      <div class="ticker-item hidden" id="t4"><span class="ticker-dot"></span>🇵🇰 Omar from Pakistan activated his Mercury account · 3 hours ago</div>
-      <div class="ticker-item active" id="t5"><span class="ticker-dot"></span>🇳🇬 Chidi from Nigeria got his Wyoming LLC · 5 hours ago</div>
-    </div>
-  </div>
-</div>
+    function showOverlay(type){
+      loadingOverlay.classList.remove("show");
+      emptyOverlay.classList.remove("show");
+      errorOverlay.classList.remove("show");
 
-<!-- ══ WHO IT'S FOR ══ -->
-<section class="section bg-white fade-in-section is-visible" id="who" aria-labelledby="whoTitle">
-  <div class="wrap">
-    <div class="sec-head center">
-      <div class="eyebrow gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;"><span class="eyebrow-dot"></span>Who It's For</div>
-      <h2 class="sh gsap-animate" id="whoTitle" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">Built for <span>Global Entrepreneurs</span></h2>
-      <p class="sec-sub gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">If you're building outside the US but want access to the world's most powerful market, this is built for you.</p>
-    </div>
-    <div class="who-grid">
-      <div class="who-card gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-        <div class="who-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
-        </div>
-        <h3 class="card-title">E-Commerce Sellers</h3>
-        <p class="card-body">Need a verified US entity to sell on Amazon or Walmart? We deliver the legal structure, EIN, and banking to pass marketplace verification and start selling.</p>
-      </div>
-      <div class="who-card gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-        <div class="who-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="2" y1="20" x2="22" y2="20"></line></svg>
-        </div>
-        <h3 class="card-title">Freelancers &amp; Consultants</h3>
-        <p class="card-body">Invoice US clients in USD, receive international payments cleanly, and look more credible to global clients — all with a proper, professional US business structure.</p>
-      </div>
-      <div class="who-card gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-        <div class="who-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
-        </div>
-        <h3 class="card-title">Tech Founders</h3>
-        <p class="card-body">Launch a Delaware C-Corp investor-ready structure remotely. Access US-based banking, stay compliant from day one, and present a credible entity to US investors.</p>
-      </div>
-      <div class="who-card gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-        <div class="who-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
-        </div>
-        <h3 class="card-title">Service Businesses</h3>
-        <p class="card-body">Accept Stripe and PayPal, bill in USD, and operate professionally in the US market without needing a physical presence or US address of your own.</p>
-      </div>
-      <div class="who-card gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-        <div class="who-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line></svg>
-        </div>
-        <h3 class="card-title">Global Brand Builders</h3>
-        <p class="card-body">Establish your brand in the world's largest market. Get the US entity, banking, and compliance backbone your global expansion needs to scale with confidence.</p>
-      </div>
-      <div class="who-card gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-        <div class="who-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="3" width="15" height="13" rx="1"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
-        </div>
-        <h3 class="card-title">Importers &amp; Exporters</h3>
-        <p class="card-body">Establish supplier credibility and US business legitimacy. Access trade financing, US banking, and compliant cross-border operations with a verified entity.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══ HOW IT WORKS ══ -->
-<section class="section bg-gray fade-in-section is-visible" id="how-it-works" aria-labelledby="howTitle">
-  <div class="wrap">
-    <div class="sec-head center">
-      <div class="eyebrow gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;"><span class="eyebrow-dot"></span>The Process</div>
-      <h2 class="sh gsap-animate" id="howTitle" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">Up &amp; Running in <span>3 Simple Steps</span></h2>
-      <p class="sec-sub gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">We've removed every obstacle between you and a fully operational US company. Here's exactly how it works.</p>
-    </div>
-    <div class="how-grid">
-      <div class="how-card gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-        <div class="how-num">1</div>
-        <h3>Book Your Free Strategy Session</h3>
-        <p>Zero pressure. A certified specialist walks you through your best option — entity type, state, timeline, and full setup plan. Tailored to your business model and home country.</p>
-        <div class="how-tag">30-min call · No commitment</div>
-      </div>
-      <div class="how-card gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-        <div class="how-num">2</div>
-        <h3>We Handle Everything</h3>
-        <p>Our team manages your complete setup. You provide minimal documents — we do the rest, from filing to banking guidance.</p>
-        <ul class="how-list" aria-label="Included in this step">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>LLC / Corp filing</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>EIN processing (IRS CAA)</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>Registered agent included</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>US business address</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>Bank account guidance</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>Ongoing compliance</li>
-        </ul>
-        <div class="how-tag">Fully managed</div>
-      </div>
-      <div class="how-card gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-        <div class="how-num">3</div>
-        <h3>Launch &amp; Start Operating</h3>
-        <p>Receive your formation documents, activate your US bank account, and start invoicing clients, selling on marketplaces, and accepting international payments — legally and compliantly.</p>
-        <div class="how-tag">Invoice · Sell · Grow</div>
-      </div>
-    </div>
-    <p class="how-proof gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">⚡ <span>Most clients are fully set up within 1–2 weeks.</span> LLC in 1–5 days. EIN in 1–2 weeks.</p>
-  </div>
-</section>
-
-<!-- ══ STATS ══ -->
-<div class="stats-outer" role="complementary" aria-label="Trust statistics">
-  <div class="stats-grid">
-    <div class="stat-cell gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-      <span class="stat-num" id="sn1">5,000+</span>
-      <span class="stat-label">Companies Formed</span>
-    </div>
-    <div class="stat-cell gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-      <span class="stat-num" id="sn2">50+</span>
-      <span class="stat-label">Countries Served</span>
-    </div>
-    <div class="stat-cell gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-      <span class="stat-num" id="sn3">10+</span>
-      <span class="stat-label">Years Experience</span>
-    </div>
-    <div class="stat-cell caa gsap-animate" id="caaBadgeCell" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-      <div class="caa-badge-wrap">
-        <div class="caa-verified-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
-        </div>
-        <div class="caa-badge">IRS CAA Certified</div>
-      </div>
-      <p class="caa-desc">Officially authorized by the IRS to handle sensitive tax filings — not just a formation service.</p>
-    </div>
-  </div>
-  <div class="platform-row">
-    <p class="platform-label">After your setup, you unlock access to</p>
-    <div class="platform-icons">
-      <div class="platform-pill" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>Amazon
-      </div>
-      <div class="platform-pill" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="4" width="22" height="16" rx="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>Stripe
-      </div>
-      <div class="platform-pill" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v4l3 3"></path></svg>PayPal
-      </div>
-      <div class="platform-pill" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>Mercury
-      </div>
-      <div class="platform-pill" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>Shopify
-      </div>
-      <div class="platform-pill" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"></rect><path d="M8 21h8M12 17v4"></path></svg>Walmart
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ══ WHAT YOU UNLOCK ══ -->
-<section class="section bg-gray fade-in-section is-visible" id="unlock" aria-labelledby="unlockTitle">
-  <div class="wrap">
-    <div class="sec-head center">
-      <div class="eyebrow gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;"><span class="eyebrow-dot"></span>What You Get</div>
-      <h2 class="sh gsap-animate" id="unlockTitle" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">One Service. <span>Everything Unlocked.</span></h2>
-      <p class="sec-sub gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">Form your US company and instantly unlock the financial infrastructure, platforms, and compliance backbone your business needs to operate globally.</p>
-    </div>
-
-    <p class="unlock-tier-label gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">Core Unlocks — Start here</p>
-    <div class="unlock-t1">
-      <div class="u-card gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-        <div class="u-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#23C483" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="22" x2="21" y2="22"></line><line x1="6" y1="18" x2="6" y2="11"></line><line x1="10" y1="18" x2="10" y2="11"></line><line x1="14" y1="18" x2="14" y2="11"></line><line x1="18" y1="18" x2="18" y2="11"></line><polygon points="12 2 20 7 4 7"></polygon></svg>
-        </div>
-        <span class="result-tag">Banking</span>
-        <h3 class="card-title">US Business Bank Account</h3>
-        <p class="card-body">Open a real US business bank account remotely — Mercury, Relay, or Brex. Accept USD payments from any customer worldwide, with full ACH and wire access.</p>
-      </div>
-      <div class="u-card gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-        <div class="u-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#23C483" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="4" width="22" height="16" rx="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line><path d="M13 15h2l-1 2h1.5"></path></svg>
-        </div>
-        <span class="result-tag">Payments</span>
-        <h3 class="card-title">Accept Stripe &amp; PayPal</h3>
-        <p class="card-body">Get fully verified as a US business and remove all international payment restrictions. Start accepting credit cards and transfers globally — zero workarounds.</p>
-      </div>
-      <div class="u-card gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-        <div class="u-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#23C483" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
-        </div>
-        <span class="result-tag">Marketplaces</span>
-        <h3 class="card-title">Sell on Amazon &amp; Walmart</h3>
-        <p class="card-body">Pass marketplace seller verification with a real US entity and EIN. Sell on Amazon Seller Central and Walmart Marketplace — the way global brands operate.</p>
-      </div>
-      <div class="u-card gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-        <div class="u-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#23C483" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="9" y1="13" x2="15" y2="13"></line><line x1="9" y1="17" x2="13" y2="17"></line><circle cx="17.5" cy="16.5" r="2"></circle><path d="m17.5 18.5 1.5 2.5-1.5-.8-1.5.8 1.5-2.5"></path></svg>
-        </div>
-        <span class="result-tag">Tax ID</span>
-        <h3 class="card-title">Get Your EIN in Days</h3>
-        <p class="card-body">Your Employer Identification Number unlocks banking, marketplace access, and payroll. We file it for you as IRS CAA — dramatically faster than going it alone.</p>
-      </div>
-      <div class="u-card gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-        <div class="u-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#23C483" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
-        </div>
-        <span class="result-tag">Compliance</span>
-        <h3 class="card-title">Stay Compliant Automatically</h3>
-        <p class="card-body">Never miss a filing deadline. We manage annual reports, registered agent renewals, and IRS obligations — so you stay protected without lifting a finger.</p>
-      </div>
-    </div>
-
-    <p class="unlock-tier-label gsap-animate" style="margin-top: 2rem; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">Strategic Benefits — The long-term advantage</p>
-    <div class="unlock-t2">
-      <div class="u-card t2 gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-        <div class="u-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#23C483" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-        </div>
-        <span class="result-tag">Address</span>
-        <h3 class="card-title">US Business Address</h3>
-        <p class="card-body">Professional registered address in Wyoming or Delaware — included with your setup. Use it on your website, invoices, and contracts for instant US credibility.</p>
-      </div>
-      <div class="u-card t2 gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-        <div class="u-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#23C483" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="4" width="22" height="16" rx="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line><polyline points="7 15 10 12 13 14 17 10"></polyline></svg>
-        </div>
-        <span class="result-tag">Credit</span>
-        <h3 class="card-title">Build US Business Credit</h3>
-        <p class="card-body">Start establishing a US business credit history from day one. Access better financing, lower fees, and higher credit limits as your US entity matures.</p>
-      </div>
-      <div class="u-card t2 gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-        <div class="u-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#23C483" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path></svg>
-        </div>
-        <span class="result-tag">Funding</span>
-        <h3 class="card-title">Access US Investors &amp; Funding</h3>
-        <p class="card-body">A US LLC or Delaware C-Corp opens doors to American investors, YC-style accelerators, and funding opportunities that require a US entity structure.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══ WHY US ══ -->
-<section class="section bg-navy-deep fade-in-section is-visible" id="why-us" aria-labelledby="whyTitle">
-  <div class="wrap">
-    <div class="sec-head center">
-      <div class="eyebrow gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;"><span class="eyebrow-dot"></span>Why Us</div>
-      <h2 class="sh onnavy gsap-animate" id="whyTitle" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">Why Founders Choose <span>Business Globalizer</span></h2>
-      <p class="sec-sub onnavy gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">Not a self-serve portal. Not a basic filing service. A specialist team with an IRS credential and 10+ years of non-resident expertise.</p>
-    </div>
-    <div class="why-grid">
-      <div class="why-card gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg></div>
-        <h3 class="card-title onnavy">IRS CAA Certified</h3>
-        <p class="card-body onnavy">We hold an official IRS credential — not just a reseller. Authorized to handle sensitive tax filings directly, which speeds up EIN issuance and reduces risk for you.</p>
-      </div>
-      <div class="why-card gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"></circle><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"></path><path d="M1 12h2M21 12h2M12 1v2M12 21v2"></path></svg></div>
-        <h3 class="card-title onnavy">Full Setup — Not Just Filing</h3>
-        <p class="card-body onnavy">Most services stop at LLC filing. We go further: EIN, registered agent, banking guidance, compliance monitoring — the complete infrastructure your business needs.</p>
-      </div>
-      <div class="why-card gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></div>
-        <h3 class="card-title onnavy">Non-Resident Specialists</h3>
-        <p class="card-body onnavy">10+ years focused on non-US residents. We know exact requirements for 50+ countries — no generic advice, no trial and error with your business.</p>
-      </div>
-      <div class="why-card gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg></div>
-        <h3 class="card-title onnavy">Hands-On Support</h3>
-        <p class="card-body onnavy">Real humans, not a help-center bot. Specialists guide you through every step and stay engaged after launch — for compliance, questions, and growth.</p>
-      </div>
-      <div class="why-card gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg></div>
-        <h3 class="card-title onnavy">5,000+ Companies. 50+ Countries.</h3>
-        <p class="card-body onnavy">Our track record speaks for itself. From Iran to Brazil to the UAE — thousands of successfully launched businesses, including complex structures and unique country situations.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══ TESTIMONIALS ══ -->
-<section class="section bg-gray fade-in-section is-visible" id="testimonials" aria-labelledby="testiTitle">
-  <div class="wrap">
-    <div class="sec-head center">
-      <div class="eyebrow gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;"><span class="eyebrow-dot"></span>Client Results</div>
-      <h2 class="sh gsap-animate" id="testiTitle" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">Real Founders. <span>Real Outcomes.</span></h2>
-      <p class="sec-sub gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">From 50+ countries. Every story is a real person who stopped waiting and started building.</p>
-    </div>
-    <div class="testi-grid">
-      <div class="t-card gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-        <div class="t-result-banner"><p>🏆 LLC, EIN &amp; Mercury bank account — set up in under 2 weeks.</p></div>
-        <div class="t-stars" aria-label="5 out of 5 stars">
-          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-        </div>
-        <p class="t-quote">I launched my Amazon FBA business through Business Globalizer. <strong>Had my Wyoming LLC, EIN, and Mercury bank account set up in under 2 weeks.</strong> I'd been stuck for months trying to do it alone. Started selling on Amazon the following week. Absolute game changer.</p>
-        <div class="t-author">
-          <div class="t-av" style="background:#fff3cd">R</div>
-          <div><div class="t-name">Reza K. 🇮🇷</div><div class="t-role">Amazon FBA Seller · Tehran, Iran</div></div>
-        </div>
-      </div>
-      <div class="t-card gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-        <div class="t-result-banner"><p>🏆 Wyoming LLC set up in days — now invoicing US clients professionally in USD.</p></div>
-        <div class="t-stars" aria-label="5 out of 5 stars">
-          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-        </div>
-        <p class="t-quote">As a freelance designer in Brazil, I struggled for years to accept USD payments without massive fees. <strong>Business Globalizer set up my Wyoming LLC in days.</strong> Now I invoice US clients professionally with a real business bank account. My rates went up because clients take me far more seriously.</p>
-        <div class="t-author">
-          <div class="t-av" style="background:#d4edda">M</div>
-          <div><div class="t-name">Maria Santos 🇧🇷</div><div class="t-role">Freelance Designer · São Paulo, Brazil</div></div>
-        </div>
-      </div>
-      <div class="t-card gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-        <div class="t-result-banner"><p>🏆 Eliminated 4% conversion fees — now receiving USD directly into a US account.</p></div>
-        <div class="t-stars" aria-label="5 out of 5 stars">
-          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-        </div>
-        <p class="t-quote">Running my e-commerce business from the UAE, I was losing 4% on every transaction to currency conversion. <strong>Business Globalizer set up my US LLC and Mercury bank account — now I receive USD directly.</strong> I've saved thousands already and my business looks far more credible to US suppliers.</p>
-        <div class="t-author">
-          <div class="t-av" style="background:#cce5ff">A</div>
-          <div><div class="t-name">Ahmed Al-Farsi 🇦🇪</div><div class="t-role">E-Commerce Entrepreneur · Dubai, UAE</div></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══ FAQ ══ -->
-<section class="section bg-white fade-in-section is-visible" id="faq" aria-labelledby="faqTitle">
-  <div class="wrap">
-    <div class="faq-layout">
-      <div class="faq-sticky gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-        <div class="eyebrow"><span class="eyebrow-dot"></span>Common Questions</div>
-        <h2 class="sh" id="faqTitle">Answers to Everything You're Wondering</h2>
-        <p>Not finding your answer? Book a free 30-minute call — our specialists answer every question with zero sales pressure.</p>
-        <a href="https://8ef0ce78-a015-4e26-833e-7dd301a9c521.powerads.me/#consultation" class="btn-primary">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
-          Ask Us — It's Free
-        </a>
-      </div>
-      <div class="faq-list" role="list">
-        <div class="faq-item gsap-animate" role="listitem" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-          <button class="faq-btn" aria-expanded="false"><span>Do I need to visit the US to form my LLC?</span><div class="faq-chev" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></div></button>
-          <div class="faq-ans"><p><strong>No — the process is 100% remote.</strong> You never need to visit the US or any embassy. We handle all filings, government communications, and paperwork on your behalf. All you need is a valid passport and internet access.</p></div>
-        </div>
-        <div class="faq-item gsap-animate" role="listitem" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-          <button class="faq-btn" aria-expanded="false"><span>How long does the entire setup take?</span><div class="faq-chev" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></div></button>
-          <div class="faq-ans"><p><strong>LLC formation: 1–5 business days. EIN: 1–2 weeks.</strong> Most clients are fully set up — including bank account activation — within 2 weeks. We offer expedited processing for clients who need their entity faster. Ask us during your free consultation.</p></div>
-        </div>
-        <div class="faq-item gsap-animate" role="listitem" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-          <button class="faq-btn" aria-expanded="false"><span>Which US state should I form my LLC in?</span><div class="faq-chev" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></div></button>
-          <div class="faq-ans"><p><strong>Wyoming or Delaware — we advise based on your specific situation.</strong> Wyoming is ideal for most non-residents: no state income tax, strong privacy, low fees (~$60/year). Delaware is preferred for founders raising venture capital. We recommend the best option for your business model on the free call — no guessing.</p></div>
-        </div>
-        <div class="faq-item gsap-animate" role="listitem" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-          <button class="faq-btn" aria-expanded="false"><span>Can I open a real US bank account as a non-resident?</span><div class="faq-chev" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></div></button>
-          <div class="faq-ans"><p><strong>Yes — we guide you to open a real US business bank account remotely.</strong> We work with Mercury, Relay, and Brex — all of which support remote onboarding for foreign-owned LLCs. You'll receive a full business account with debit card, ACH transfers, and wire capability.</p></div>
-        </div>
-        <div class="faq-item gsap-animate" role="listitem" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-          <button class="faq-btn" aria-expanded="false"><span>How much does it cost?</span><div class="faq-chev" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></div></button>
-          <div class="faq-ans"><p><strong>Transparent, all-inclusive pricing — no hidden fees.</strong> Our packages cover LLC filing, EIN, registered agent, business address, and bank account guidance. State filing fees vary (Wyoming ~$100, Delaware ~$90) and are included in our quote. Book a free consultation for exact pricing tailored to your needs.</p></div>
-        </div>
-        <div class="faq-item gsap-animate" role="listitem" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-          <button class="faq-btn" aria-expanded="false"><span>Do I owe US taxes as a non-resident LLC owner?</span><div class="faq-chev" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></div></button>
-          <div class="faq-ans"><p><strong>Only on US-sourced income — many non-resident LLC owners have zero US tax liability.</strong> However, <strong>annual filing is required</strong> (Form 5472 + 1120) even with no tax owed. We handle this for you as part of our compliance service, so you're always covered and never caught off guard.</p></div>
-        </div>
-        <div class="faq-item gsap-animate" role="listitem" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-          <button class="faq-btn" aria-expanded="false"><span>What if I already have a business in my home country?</span><div class="faq-chev" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></div></button>
-          <div class="faq-ans"><p><strong>That's very common — we help you add a US entity to your existing structure.</strong> Many clients run a home-country entity alongside a US LLC for payments, marketplace access, or investor credibility. We map the best parallel structure for your situation on the free consultation call.</p></div>
-        </div>
-        <div class="faq-item gsap-animate" role="listitem" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-          <button class="faq-btn" aria-expanded="false"><span>Is my personal and business information secure?</span><div class="faq-chev" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></div></button>
-          <div class="faq-ans"><p><strong>Yes — fully secure, IRS-vetted, and used by thousands of businesses worldwide.</strong> As an IRS CAA, we are officially authorized and audited to handle sensitive identity and tax documents. We operate with strict data protocols and have processed thousands of filings with a clean track record.</p></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══ FINAL CTA ══ -->
-<section class="final-cta fade-in-section is-visible" id="consultation" aria-labelledby="finalTitle">
-  <div class="final-dots" aria-hidden="true"></div>
-  <div class="final-glow" aria-hidden="true"></div>
-  <div class="final-inner">
-    <div class="final-eyebrow gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
-      Free 30-Minute Strategy Session
-    </div>
-    <h2 class="gsap-animate" id="finalTitle" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-      Ready to Launch Your US Business —<br><span>The Right Way?</span>
-    </h2>
-    <p class="gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">Work with IRS-recognized compliance specialists serving founders from 50+ countries.</p>
-    <div class="final-btns gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-      <a href="https://businessglobalizer.com/" class="btn-primary lg">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
-        Book Free Consultation
-      </a>
-    </div>
-    <div class="final-bullets gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-      <div class="f-bullet"><svg viewBox="0 0 24 24" fill="none" stroke="#23C483" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>No obligation</div>
-      <div class="f-bullet"><svg viewBox="0 0 24 24" fill="none" stroke="#23C483" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>Free 30-min session</div>
-      <div class="f-bullet"><svg viewBox="0 0 24 24" fill="none" stroke="#23C483" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"></circle><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path></svg>Certified specialists</div>
-      <div class="f-bullet"><svg viewBox="0 0 24 24" fill="none" stroke="#23C483" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>Setup in days, not months</div>
-      <div class="f-bullet"><svg viewBox="0 0 24 24" fill="none" stroke="#23C483" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="2" y1="20" x2="22" y2="20"></line></svg>100% remote process</div>
-      <div class="f-bullet"><svg viewBox="0 0 24 24" fill="none" stroke="#23C483" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>Trusted in 50+ countries</div>
-    </div>
-  </div>
-</section>
-
-</main>
-
-<!-- ══ FOOTER ══ -->
-<footer class="footer" role="contentinfo">
-  <div class="footer-inner">
-    <div class="footer-top">
-      <div>
-        <div class="footer-brand"><img src="./Business Globalizer — US LLC, EIN &amp; Bank Account. Launched Remotely._files/bg-logo-1773588696.webp" alt="Business Globalizer"></div>
-        <p class="footer-tagline">Launch your US business remotely — LLC, EIN, banking, and compliance. Fully managed.</p>
-      </div>
-      <nav class="footer-links" aria-label="Footer navigation">
-        <a href="https://8ef0ce78-a015-4e26-833e-7dd301a9c521.powerads.me/#how-it-works">How It Works</a>
-        <a href="https://8ef0ce78-a015-4e26-833e-7dd301a9c521.powerads.me/#who">Who It's For</a>
-        <a href="https://8ef0ce78-a015-4e26-833e-7dd301a9c521.powerads.me/#faq">FAQ</a>
-        <a href="https://8ef0ce78-a015-4e26-833e-7dd301a9c521.powerads.me/#consultation">Free Consultation</a>
-        <a href="https://businessglobalizer.com/">Contact</a>
-        <a href="https://businessglobalizer.com/">Privacy Policy</a>
-        <a href="https://businessglobalizer.com/">Terms</a>
-      </nav>
-    </div>
-    <div class="footer-bottom">
-      <span class="footer-trust">IRS CAA Certified &nbsp;·&nbsp; 10+ Years &nbsp;·&nbsp; 50+ Countries</span>
-      <p class="footer-copy">© 2025 <a href="https://businessglobalizer.com/">Business Globalizer</a>. All rights reserved.</p>
-    </div>
-  </div>
-</footer>
-
-<script>
-  /* ── NAV ── */
-  const mainNav = document.getElementById('mainNav');
-  window.addEventListener('scroll', () => mainNav.classList.toggle('scrolled', scrollY > 50), {passive:true});
-
-  /* ── HAMBURGER ── */
-  const burger = document.getElementById('hamburger');
-  const mob    = document.getElementById('mobNav');
-  document.querySelectorAll('.mob-link').forEach(l => l.addEventListener('click', () => {
-    burger.classList.remove('open'); mob.classList.remove('open');
-    burger.setAttribute('aria-expanded','false'); mob.setAttribute('aria-hidden','true');
-    document.body.style.overflow = '';
-  }));
-  burger.addEventListener('click', () => {
-    const o = burger.classList.toggle('open');
-    mob.classList.toggle('open', o);
-    burger.setAttribute('aria-expanded', String(o));
-    mob.setAttribute('aria-hidden', String(!o));
-    document.body.style.overflow = o ? 'hidden' : '';
-  });
-
-  /* ── FAQ ── */
-  document.querySelectorAll('.faq-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const item = btn.closest('.faq-item');
-      const open = item.classList.contains('open');
-      document.querySelectorAll('.faq-item.open').forEach(i => {
-        i.classList.remove('open');
-        i.querySelector('.faq-btn').setAttribute('aria-expanded','false');
-      });
-      if (!open) { item.classList.add('open'); btn.setAttribute('aria-expanded','true'); }
-    });
-  });
-
-  /* ── TICKER ── */
-  (function() {
-    const items = document.querySelectorAll('.ticker-item');
-    let current = 0;
-    setInterval(() => {
-      items[current].classList.remove('active');
-      items[current].classList.add('hidden');
-      current = (current + 1) % items.length;
-      items[current].classList.remove('hidden');
-      items[current].classList.add('active');
-    }, 4000);
-  })();
-
-  /* ── INTERSECTION OBSERVER — section fade-in ── */
-  const fadeEls = document.querySelectorAll('.fade-in-section');
-  const fadeObs = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) { e.target.classList.add('is-visible'); fadeObs.unobserve(e.target); }
-    });
-  }, { threshold: 0.08 });
-  fadeEls.forEach(el => fadeObs.observe(el));
-
-  /* ── STAT COUNTER ── */
-  function animateCounter(el, target, suffix, duration) {
-    const start = performance.now();
-    function step(now) {
-      const elapsed = now - start;
-      const progress = Math.min(elapsed / duration, 1);
-      const eased = 1 - Math.pow(1 - progress, 3);
-      el.textContent = Math.round(eased * target).toLocaleString() + suffix;
-      if (progress < 1) requestAnimationFrame(step);
+      if(type === "loading") loadingOverlay.classList.add("show");
+      if(type === "empty") emptyOverlay.classList.add("show");
+      if(type === "error") errorOverlay.classList.add("show");
     }
-    requestAnimationFrame(step);
-  }
-  const statObs = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        animateCounter(document.getElementById('sn1'), 5000, '+', 1800);
-        animateCounter(document.getElementById('sn2'), 50,   '+', 1400);
-        animateCounter(document.getElementById('sn3'), 10,   '+', 1200);
-        statObs.disconnect();
+
+    function updateTopbar(page, state){
+      if(!page){
+        pageTitle.textContent = "Select a page";
+        pageUrl.textContent = "No file selected";
+        pageTag.textContent = "Ready";
+        pageStatus.textContent = "Idle";
+        return;
+      }
+
+      pageTitle.textContent = page.name;
+      pageUrl.textContent = page.url;
+      pageTag.textContent = page.category || "HTML Page";
+      pageStatus.textContent = state || "Ready";
+    }
+
+    function renderList(items){
+      pageList.innerHTML = "";
+
+      if(!items.length){
+        pageList.innerHTML = '<div class="empty-list">No page matched your search.</div>';
+        resultCount.textContent = "0 pages";
+        return;
+      }
+
+      resultCount.textContent = items.length + (items.length === 1 ? " page" : " pages");
+
+      items.forEach((page, index) => {
+        const item = document.createElement("div");
+        item.className = "item";
+        item.dataset.url = page.url;
+
+        if(currentPage && currentPage.url === page.url){
+          item.classList.add("active");
+        }
+
+        item.innerHTML = `
+          <div class="item-icon">${(index + 1).toString().padStart(2,"0")}</div>
+          <div class="item-body">
+            <div class="item-title">${page.name}</div>
+            <div class="item-desc">${page.description || "HTML preview item"}</div>
+            <div class="item-meta">
+              <span class="pill">${page.category || "HTML"}</span>
+              <span class="pill">${page.tag || "Preview"}</span>
+            </div>
+          </div>
+        `;
+
+        item.addEventListener("click", () => {
+          selectPage(page);
+          if(window.innerWidth <= 980){
+            sidebar.classList.remove("open");
+          }
+        });
+
+        pageList.appendChild(item);
+      });
+    }
+
+    function highlightActive(url){
+      document.querySelectorAll(".item").forEach(item => {
+        item.classList.toggle("active", item.dataset.url === url);
+      });
+    }
+
+    function selectPage(page){
+      currentPage = page;
+      highlightActive(page.url);
+      updateTopbar(page, "Loading");
+      showOverlay("loading");
+
+      clearTimeout(loadTimer);
+
+      previewFrame.src = page.url;
+
+      /*
+        iframe error detect perfect hoy na sob browser e.
+        tai fallback timer use kortesi.
+        jodi 4 sec er moddhe load na hoy, error show korbo.
+      */
+      loadTimer = setTimeout(() => {
+        showOverlay("error");
+        updateTopbar(page, "Failed");
+        errorText.textContent =
+          'Could not open "' + page.url + '". Check filename and folder path. Example problem: configured "pages/index2.html" but actual file name is different.';
+      }, 4000);
+    }
+
+    previewFrame.addEventListener("load", () => {
+      clearTimeout(loadTimer);
+      showOverlay(null);
+      if(currentPage){
+        updateTopbar(currentPage, "Live");
       }
     });
-  }, { threshold: 0.5 });
-  statObs.observe(document.querySelector('.stats-outer'));
 
-  /* ── GSAP ── */
-  if (typeof gsap !== 'undefined') {
-    gsap.registerPlugin(ScrollTrigger);
+    searchInput.addEventListener("input", () => {
+      const q = searchInput.value.trim().toLowerCase();
 
-    gsap.set('body', {opacity:0});
-    document.fonts.ready.then(() => gsap.to('body', {opacity:1, duration:.5, ease:'power2.out'}));
-
-    const hSeq = ['#aLogo','#aBadge','#heroH1','#aHeroSub','#aHeroCtas'];
-    gsap.set(hSeq, {opacity:0, y:24});
-    const htl = gsap.timeline({delay:.25});
-    htl.to('#aLogo',    {opacity:1,y:0,duration:.7,ease:'power3.out'})
-       .to('#aBadge',   {opacity:1,y:0,duration:.65,ease:'power3.out'},'-=.42')
-       .to('#heroH1',   {opacity:1,y:0,duration:.8,ease:'power3.out'},'-=.48')
-       .to('#aHeroSub', {opacity:1,y:0,duration:.68,ease:'power3.out'},'-=.52')
-       .to('#aHeroCtas',{opacity:1,y:0,duration:.68,ease:'power3.out'},'-=.52');
-
-    function rev(sel, stagger, triggerEl) {
-      const els = gsap.utils.toArray(sel);
-      if (!els.length) return;
-      gsap.set(els, {opacity:0, y:20});
-      gsap.to(els, {
-        opacity:1, y:0, duration:.72, ease:'power2.out', stagger:stagger||0,
-        scrollTrigger:{trigger: triggerEl || (els[0].closest('section') || els[0]), start:'top 87%'}
+      const filtered = PAGE_DATA.filter(page => {
+        return (
+          page.name.toLowerCase().includes(q) ||
+          page.url.toLowerCase().includes(q) ||
+          (page.description || "").toLowerCase().includes(q) ||
+          (page.category || "").toLowerCase().includes(q) ||
+          (page.tag || "").toLowerCase().includes(q)
+        );
       });
+
+      renderList(filtered);
+    });
+
+    openBtn.addEventListener("click", () => {
+      if(!currentPage) return;
+      window.open(currentPage.url, "_blank");
+    });
+
+    refreshBtn.addEventListener("click", () => {
+      if(!currentPage) return;
+      selectPage(currentPage);
+    });
+
+    copyBtn.addEventListener("click", async () => {
+      if(!currentPage) return;
+      try{
+        await navigator.clipboard.writeText(currentPage.url);
+        pageStatus.textContent = "Copied";
+        setTimeout(() => {
+          if(currentPage) pageStatus.textContent = "Live";
+        }, 1200);
+      }catch(e){
+        pageStatus.textContent = "Copy failed";
+      }
+    });
+
+    mobileToggle.addEventListener("click", () => {
+      sidebar.classList.toggle("open");
+    });
+
+    function init(){
+      renderList(PAGE_DATA);
+      showOverlay("empty");
+      updateTopbar(null, "Idle");
+
+      if(PAGE_DATA.length){
+        selectPage(PAGE_DATA[0]);
+      }
     }
 
-    rev('.trust-cap', .1, '.trust-capsules');
-    rev('.stats-outer .stat-cell', .1, '.stats-outer');
-    rev('.platform-pill', .06, '.platform-row');
-    rev('#unlock .eyebrow, #unlock .sh, #unlock .sec-sub', .1, '#unlock');
-    rev('.unlock-tier-label', 0);
-    rev('.u-card', .07);
-    rev('#how-it-works .eyebrow, #how-it-works .sh, #how-it-works .sec-sub', .1, '#how-it-works');
-    rev('.how-card', .13);
-    rev('.how-proof', 0);
-    rev('#who .eyebrow, #who .sh, #who .sec-sub', .1, '#who');
-    rev('.who-card', .1);
-    rev('#testimonials .eyebrow, #testimonials .sh, #testimonials .sec-sub', .1, '#testimonials');
-    rev('.t-card', .13);
-    rev('#why-us .eyebrow, #why-us .sh, #why-us .sec-sub', .1, '#why-us');
-    rev('.why-card', .1);
-    rev('.faq-sticky', 0, '#faq');
-    rev('.faq-item', .07, '#faq');
-    rev('.final-eyebrow, .final-cta h2, .final-cta p, .final-btns, .final-bullets', .1, '.final-cta');
-
-    ScrollTrigger.refresh();
-  }
-</script>
-
-<!-- PowerAds Analytics -->
-<script>
-(function(){
-  var lpId="8ef0ce78-a015-4e26-833e-7dd301a9c521";
-  var endpoint="https://lp-analytics.powerads.ai/track";
-  var params=new URLSearchParams(location.search);
-  var data={
-    landingPageId:lpId,
-    referrer:document.referrer||null,
-    path:location.pathname,
-    utm_source:params.get("utm_source"),
-    utm_medium:params.get("utm_medium"),
-    utm_campaign:params.get("utm_campaign"),
-    screenWidth:screen.width,
-    language:navigator.language,
-    timestamp:new Date().toISOString()
-  };
-  fetch(endpoint,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data),keepalive:true}).catch(function(){});
-  var start=Date.now();
-  document.addEventListener("visibilitychange",function(){
-    if(document.visibilityState==="hidden"){
-      navigator.sendBeacon(endpoint,JSON.stringify(Object.assign({},data,{event:"exit",durationMs:Date.now()-start})));
-    }
-  });
-})();
-</script>
-<!-- PowerAds Lead Capture -->
-<script>
-function submitPowerAdsLead(e){
-  e.preventDefault();
-  var f=e.target;
-  var d={
-    landingPageId:"8ef0ce78-a015-4e26-833e-7dd301a9c521",
-    name:f.querySelector("[name=name]")?.value||"",
-    email:f.querySelector("[name=email]")?.value||"",
-    phone:f.querySelector("[name=phone]")?.value||null,
-    source:document.referrer||null,
-    utm_source:new URLSearchParams(location.search).get("utm_source"),
-    utm_medium:new URLSearchParams(location.search).get("utm_medium"),
-    utm_campaign:new URLSearchParams(location.search).get("utm_campaign"),
-    page_url:location.href
-  };
-  fetch("https://lp-analytics.powerads.ai/leads",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(d)}).catch(function(){});
-  var ty=f.querySelector(".thank-you")||f;
-  if(f.querySelector(".thank-you")){f.querySelector(".thank-you").style.display="block";f.querySelector("button[type=submit]").style.display="none";}
-  else{f.innerHTML="<p style='text-align:center;padding:20px;font-size:1.2em'>✅ תודה! נחזור אליך בהקדם</p>";}
-  return false;
-}
-document.querySelectorAll("form").forEach(function(f){f.addEventListener("submit",submitPowerAdsLead);});
-</script>
-
-<!-- PowerAds Analytics -->
-<script>
-(function(){
-  var lpId="8ef0ce78-a015-4e26-833e-7dd301a9c521";
-  var endpoint="https://lp-analytics.powerads.ai/track";
-  var params=new URLSearchParams(location.search);
-  var data={
-    landingPageId:lpId,
-    referrer:document.referrer||null,
-    path:location.pathname,
-    utm_source:params.get("utm_source"),
-    utm_medium:params.get("utm_medium"),
-    utm_campaign:params.get("utm_campaign"),
-    screenWidth:screen.width,
-    language:navigator.language,
-    timestamp:new Date().toISOString()
-  };
-  fetch(endpoint,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data),keepalive:true}).catch(function(){});
-  var start=Date.now();
-  document.addEventListener("visibilitychange",function(){
-    if(document.visibilityState==="hidden"){
-      navigator.sendBeacon(endpoint,JSON.stringify(Object.assign({},data,{event:"exit",durationMs:Date.now()-start})));
-    }
-  });
-})();
-</script>
-<!-- PowerAds Lead Capture -->
-<script>
-function submitPowerAdsLead(e){
-  e.preventDefault();
-  var f=e.target;
-  var d={
-    landingPageId:"8ef0ce78-a015-4e26-833e-7dd301a9c521",
-    name:f.querySelector("[name=name]")?.value||"",
-    email:f.querySelector("[name=email]")?.value||"",
-    phone:f.querySelector("[name=phone]")?.value||null,
-    source:document.referrer||null,
-    utm_source:new URLSearchParams(location.search).get("utm_source"),
-    utm_medium:new URLSearchParams(location.search).get("utm_medium"),
-    utm_campaign:new URLSearchParams(location.search).get("utm_campaign"),
-    page_url:location.href
-  };
-  fetch("https://lp-analytics.powerads.ai/leads",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(d)}).catch(function(){});
-  var ty=f.querySelector(".thank-you")||f;
-  if(f.querySelector(".thank-you")){f.querySelector(".thank-you").style.display="block";f.querySelector("button[type=submit]").style.display="none";}
-  else{f.innerHTML="<p style='text-align:center;padding:20px;font-size:1.2em'>✅ תודה! נחזור אליך בהקדם</p>";}
-  return false;
-}
-document.querySelectorAll("form").forEach(function(f){f.addEventListener("submit",submitPowerAdsLead);});
-</script>
-
-<iframe frameborder="0" scrolling="no" style="background-color: transparent; border: 0px; display: none;" src="./Business Globalizer — US LLC, EIN &amp; Bank Account. Launched Remotely._files/saved_resource.html"></iframe><div id="GOOGLE_INPUT_CHEXT_FLAG" input="" input_stat="{&quot;tlang&quot;:true,&quot;tsbc&quot;:true,&quot;pun&quot;:true,&quot;mk&quot;:true,&quot;ss&quot;:true}" style="display: none;"></div><protonpass-root-da17 data-protonpass-role="root" data-protonpass-theme="os"><template shadowrootmode="closed"></template></protonpass-root-da17></body></html>
+    init();
+  </script>
+</body>
+</html>
