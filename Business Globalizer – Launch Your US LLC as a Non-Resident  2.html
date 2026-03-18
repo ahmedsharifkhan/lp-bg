@@ -158,13 +158,13 @@
     }
     .nav-logo-icon {
       width: 38px; height: 38px;
-      background: linear-gradient(135deg, var(--gold), var(--gold2));
+      /* background: linear-gradient(135deg, var(--gold), var(--gold2)); */
       border-radius: 9px;
       display: flex; align-items: center; justify-content: center;
     }
     .nav-logo-icon svg { width: 22px; height: 22px; }
     .nav-logo-text { font-size: 1.1rem; font-weight: 800; color: #fafafa; letter-spacing: -0.01em; }
-    .nav-logo-text span { color: var(--gold); }
+    /* .nav-logo-text span { color: var(--gold); } */
     .nav-links {
       display: flex;
       gap: 32px;
@@ -717,22 +717,19 @@
     <nav class="nav-inner" aria-label="Main navigation">
       <a href="https://280af364-1081-4f8f-aa04-107a3f8a6e5c.powerads.me/#" class="nav-logo" aria-label="Business Globalizer home">
         <div class="nav-logo-icon">
-          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="12" cy="12" r="10" stroke="#060e1e" stroke-width="1.5"></circle>
-            <path d="M2 12h20M12 2c-2.5 3-4 6-4 10s1.5 7 4 10M12 2c2.5 3 4 6 4 10s-1.5 7-4 10" stroke="#060e1e" stroke-width="1.5" stroke-linecap="round"></path>
-          </svg>
+          <img src="bg white svg.svg" alt="" srcset="">
         </div>
         <span class="nav-logo-text">Business <span>Globalizer</span></span>
       </a>
       <ul class="nav-links" role="list">
-        <li><a href="https://280af364-1081-4f8f-aa04-107a3f8a6e5c.powerads.me/#who">Who It's For</a></li>
-        <li><a href="https://280af364-1081-4f8f-aa04-107a3f8a6e5c.powerads.me/#how">How It Works</a></li>
-        <li><a href="https://280af364-1081-4f8f-aa04-107a3f8a6e5c.powerads.me/#unlock">What You Get</a></li>
-        <li><a href="https://280af364-1081-4f8f-aa04-107a3f8a6e5c.powerads.me/#why">Why Us</a></li>
-        <li><a href="https://280af364-1081-4f8f-aa04-107a3f8a6e5c.powerads.me/#faq">FAQ</a></li>
+        <li><a href="/#who">Who It's For</a></li>
+        <li><a href="/#how">How It Works</a></li>
+        <li><a href="/#unlock">What You Get</a></li>
+        <li><a href="/#why">Why Us</a></li>
+        <li><a href="/#faq">FAQ</a></li>
       </ul>
       <div class="nav-cta">
-        <a href="https://280af364-1081-4f8f-aa04-107a3f8a6e5c.powerads.me/#final-cta" class="btn btn-gold" style="font-size:0.9rem;padding:11px 22px;">Book Free Consultation</a>
+        <a href="https://calendly.com/businessglobalizer-sales/bookmeeting" class="btn btn-gold" style="font-size:0.9rem;padding:11px 22px;">Book Free Consultation</a>
       </div>
       <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -741,14 +738,22 @@
   </div>
 </header>
 
-<!-- Mobile Nav Overlay -->
-<div class="mobile-nav" id="mobileNav" role="dialog" aria-modal="true" aria-label="Mobile navigation">
-  <a href="https://280af364-1081-4f8f-aa04-107a3f8a6e5c.powerads.me/#who" class="mobile-link">Who It's For</a>
-  <a href="https://280af364-1081-4f8f-aa04-107a3f8a6e5c.powerads.me/#how" class="mobile-link">How It Works</a>
-  <a href="https://280af364-1081-4f8f-aa04-107a3f8a6e5c.powerads.me/#unlock" class="mobile-link">What You Get</a>
-  <a href="https://280af364-1081-4f8f-aa04-107a3f8a6e5c.powerads.me/#why" class="mobile-link">Why Us</a>
-  <a href="https://280af364-1081-4f8f-aa04-107a3f8a6e5c.powerads.me/#faq" class="mobile-link">FAQ</a>
-  <a href="https://280af364-1081-4f8f-aa04-107a3f8a6e5c.powerads.me/#final-cta" class="btn btn-gold" style="margin-top:16px;">Book Free Consultation</a>
+
+
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav" role="dialog" aria-modal="true" aria-label="Mobile navigation" style="display:none;flex-direction:column;padding:20px;background:#020617;">
+  
+  <a href="/#who" class="mobile-link" style="color:#fff;padding:10px 0;text-decoration:none;">Who It's For</a>
+  <a href="/#how" class="mobile-link" style="color:#fff;padding:10px 0;text-decoration:none;">How It Works</a>
+  <a href="/#unlock" class="mobile-link" style="color:#fff;padding:10px 0;text-decoration:none;">What You Get</a>
+  <a href="/#why" class="mobile-link" style="color:#fff;padding:10px 0;text-decoration:none;">Why Us</a>
+  <a href="/#faq" class="mobile-link" style="color:#fff;padding:10px 0;text-decoration:none;">FAQ</a>
+
+  <a href="/#final-cta" class="btn btn-gold" style="margin-top:16px;background:#facc15;color:#000;padding:12px;border-radius:10px;text-align:center;text-decoration:none;font-weight:600;">
+    Book Free Consultation
+  </a>
+
 </div>
 
 <!-- ═══════════════════ HERO ═══════════════════ -->
@@ -761,15 +766,15 @@
       <h1 class="gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">Launch Your<br><em>US Business</em><br>From Anywhere</h1>
       <p class="hero-sub gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">Form a US LLC, get your EIN, and open a real US business bank account — 100% remotely, no SSN required. Built specifically for non-US residents.</p>
       <div class="hero-ctas gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-        <a href="https://280af364-1081-4f8f-aa04-107a3f8a6e5c.powerads.me/#final-cta" class="btn btn-gold">
+        <a href="https://calendly.com/businessglobalizer-sales/bookmeeting" class="btn btn-gold">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M8 2v3M16 2v3M3 8h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg>
           Book Free Consultation
         </a>
-        <a href="https://280af364-1081-4f8f-aa04-107a3f8a6e5c.powerads.me/#how" class="btn btn-outline">See How It Works</a>
+        <a href="#how" class="btn btn-outline">See How It Works</a>
       </div>
       <div class="hero-stats">
         <div class="hero-stat gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-          <strong>500+</strong>
+          <strong>5000+</strong>
           <span>Businesses Formed</span>
         </div>
         <div class="hero-stat gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
@@ -799,7 +804,7 @@
         <div class="trust-badge-icon">
           <svg viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" stroke="#060e1e" stroke-width="2" stroke-linecap="round"></path></svg>
         </div>
-        <div class="trust-badge-text"><strong>500+ Clients</strong><span>From 50+ Countries</span></div>
+        <div class="trust-badge-text"><strong>5000+ Clients</strong><span>From 50+ Countries</span></div>
       </div>
       <div class="trust-badge gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
         <div class="trust-badge-icon">
@@ -905,7 +910,7 @@
   <div class="container">
     <div class="unlock-layout">
       <div class="unlock-img gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-        <img src="./Business Globalizer – Launch Your US LLC as a Non-Resident  2_files/photo-1678962855747-9a227d8066f5" alt="Business professional working with US documents" loading="lazy">
+        <img src="./Business Globalizer – Launch Your US LLC as a Non-Resident  2_files/call.png" alt="Business professional working with US documents" loading="lazy">
         <div class="unlock-img-badge">
           <div style="width:36px;height:36px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center;">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
@@ -949,7 +954,7 @@
 </section>
 
 <!-- ═══════════════════ WHY US ═══════════════════ -->
-<section id="why" class="section-pad" aria-labelledby="why-heading">
+<!-- <section id="why" class="section-pad" aria-labelledby="why-heading">
   <div class="container">
     <div class="why-header">
       <span class="section-label gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 18px); opacity: 0;">Why Business Globalizer</span>
@@ -1004,6 +1009,84 @@
         <div class="ct-col-highlight ct-col-highlight-bottom yes">✅ Yes</div>
         <div class="no">❌ No</div>
         <div class="no">❌ No</div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+<section id="why" class="section-pad" aria-labelledby="why-heading" style="padding: 60px 16px;">
+  <div class="container" style="max-width: 1200px; margin: 0 auto;">
+    
+    <div class="why-header" style="text-align: center; margin-bottom: 32px;">
+      <span class="section-label gsap-animate" style="display: inline-block; font-size: 13px; font-weight: 700; color: #facc15; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px;">Why Business Globalizer</span>
+      
+      <h2 id="why-heading" class="gsap-animate" style="margin: 0; font-size: clamp(26px, 5vw, 42px); line-height: 1.2; font-weight: 800; color: #0f172a;">We're Not Like the Others</h2>
+      
+      <p class="gsap-animate" style="color: #64748b; max-width: 520px; margin: 12px auto 0; font-size: 15px; line-height: 1.7;">See how we compare to popular alternatives. The difference isn't just price — it's expertise, service, and results.</p>
+    </div>
+
+    <div style="width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; border-radius: 20px;">
+      <div class="comparison-table gsap-animate" style="min-width: 900px; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.08);">
+        
+        <!-- HEADER -->
+        <div class="ct-head" style="display: grid; grid-template-columns: 1.3fr 1fr 1fr 1fr; background: #020617; color: #fff; font-weight: 700; font-size: 14px;">
+          <div style="padding: 16px;">FEATURE</div>
+          <div style="padding: 16px; color: #facc15;">BUSINESS GLOBALIZER</div>
+          <div style="padding: 16px;">DOOLA</div>
+          <div style="padding: 16px;">FIRSTBASE</div>
+        </div>
+
+        <!-- ROW -->
+        <div class="ct-row" style="display: grid; grid-template-columns: 1.3fr 1fr 1fr 1fr; background: #f8fafc; border-top: 1px solid #e2e8f0;">
+          <div style="padding: 14px; font-weight: 600;">IRS CAA Certified</div>
+          <div style="padding: 14px; color: #16a34a; font-weight: 700;">✅ Yes</div>
+          <div style="padding: 14px; color: #64748b;">❌ No</div>
+          <div style="padding: 14px; color: #64748b;">❌ No</div>
+        </div>
+
+        <div class="ct-row" style="display: grid; grid-template-columns: 1.3fr 1fr 1fr 1fr; background: #f8fafc; border-top: 1px solid #e2e8f0;">
+          <div style="padding: 14px; font-weight: 600;">EIN Without SSN</div>
+          <div style="padding: 14px; color: #16a34a; font-weight: 700;">✅ Guaranteed</div>
+          <div style="padding: 14px; color: #f59e0b;">⚠️ Limited</div>
+          <div style="padding: 14px; color: #f59e0b;">⚠️ Limited</div>
+        </div>
+
+        <div class="ct-row" style="display: grid; grid-template-columns: 1.3fr 1fr 1fr 1fr; background: #f8fafc; border-top: 1px solid #e2e8f0;">
+          <div style="padding: 14px; font-weight: 600;">Full-Service (Not DIY)</div>
+          <div style="padding: 14px; color: #16a34a; font-weight: 700;">✅ Fully Managed</div>
+          <div style="padding: 14px; color: #f59e0b;">⚠️ Mostly DIY</div>
+          <div style="padding: 14px; color: #f59e0b;">⚠️ Mostly DIY</div>
+        </div>
+
+        <div class="ct-row" style="display: grid; grid-template-columns: 1.3fr 1fr 1fr 1fr; background: #f8fafc; border-top: 1px solid #e2e8f0;">
+          <div style="padding: 14px; font-weight: 600;">Direct Expert Support</div>
+          <div style="padding: 14px; color: #16a34a; font-weight: 700;">✅ Dedicated Agent</div>
+          <div style="padding: 14px; color: #64748b;">❌ Ticket Only</div>
+          <div style="padding: 14px; color: #64748b;">❌ Ticket Only</div>
+        </div>
+
+        <div class="ct-row" style="display: grid; grid-template-columns: 1.3fr 1fr 1fr 1fr; background: #f8fafc; border-top: 1px solid #e2e8f0;">
+          <div style="padding: 14px; font-weight: 600;">Bank Account Setup</div>
+          <div style="padding: 14px; color: #16a34a; font-weight: 700;">✅ Included</div>
+          <div style="padding: 14px; color: #f59e0b;">⚠️ Add-on Cost</div>
+          <div style="padding: 14px; color: #f59e0b;">⚠️ Add-on Cost</div>
+        </div>
+
+        <div class="ct-row" style="display: grid; grid-template-columns: 1.3fr 1fr 1fr 1fr; background: #f8fafc; border-top: 1px solid #e2e8f0;">
+          <div style="padding: 14px; font-weight: 600;">Stripe/PayPal Guidance</div>
+          <div style="padding: 14px; color: #16a34a; font-weight: 700;">✅ Included</div>
+          <div style="padding: 14px; color: #64748b;">❌ Not Included</div>
+          <div style="padding: 14px; color: #64748b;">❌ Not Included</div>
+        </div>
+
+        <div class="ct-row" style="display: grid; grid-template-columns: 1.3fr 1fr 1fr 1fr; background: #f8fafc; border-top: 1px solid #e2e8f0;">
+          <div style="padding: 14px; font-weight: 600;">Same-Day Processing Start</div>
+          <div style="padding: 14px; color: #16a34a; font-weight: 700;">✅ Yes</div>
+          <div style="padding: 14px; color: #64748b;">❌ No</div>
+          <div style="padding: 14px; color: #64748b;">❌ No</div>
+        </div>
+
       </div>
     </div>
   </div>
@@ -1163,11 +1246,11 @@
       <h2 id="cta-heading" class="gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 18px); opacity: 0;">Ready to Go Global?<br>Let's Build Your US Business.</h2>
       <p class="gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 18px); opacity: 0;">Book a free 30-minute consultation with our experts. No commitment, no pressure — just clarity on how to move forward.</p>
       <div class="final-cta-btns gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 18px); opacity: 0;">
-        <a href="https://calendly.com/" target="_blank" rel="noopener" class="btn btn-gold" style="font-size:1.05rem;padding:16px 32px;">
+        <a href="https://calendly.com/businessglobalizer-sales/bookmeeting" target="_blank" rel="noopener" class="btn btn-gold" style="font-size:1.05rem;padding:16px 32px;">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M8 2v3M16 2v3M3 8h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg>
           Book Free Consultation
         </a>
-        <a href="mailto:hello@businessglobalizer.com" class="btn btn-outline" style="font-size:1.05rem;padding:16px 32px;">Send Us an Email</a>
+        <a href="mailto:sales@businessglobalizer.com" class="btn btn-outline" style="font-size:1.05rem;padding:16px 32px;">Send Us an Email</a>
       </div>
       <div class="final-features gsap-animate" style="translate: none; rotate: none; scale: none; transform: translate(0px, 18px); opacity: 0;">
         <span class="final-feature"><span class="dot"></span> Free 30-min consultation</span>
@@ -1187,7 +1270,7 @@
       <div class="footer-brand">
         <a href="https://280af364-1081-4f8f-aa04-107a3f8a6e5c.powerads.me/#" class="nav-logo" aria-label="Business Globalizer home">
           <div class="nav-logo-icon">
-            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#060e1e" stroke-width="1.5"></circle><path d="M2 12h20M12 2c-2.5 3-4 6-4 10s1.5 7 4 10M12 2c2.5 3 4 6 4 10s-1.5 7-4 10" stroke="#060e1e" stroke-width="1.5" stroke-linecap="round"></path></svg>
+            <img src="bg white svg.svg" alt="" srcset="">
           </div>
           <span class="nav-logo-text">Business <span>Globalizer</span></span>
         </a>
@@ -1204,7 +1287,7 @@
           </a>
         </div>
       </div>
-      <div class="footer-col">
+      <!-- <div class="footer-col">
         <h4>Services</h4>
         <ul>
           <li><a href="https://280af364-1081-4f8f-aa04-107a3f8a6e5c.powerads.me/#">US LLC Formation</a></li>
@@ -1214,8 +1297,8 @@
           <li><a href="https://280af364-1081-4f8f-aa04-107a3f8a6e5c.powerads.me/#">Stripe &amp; PayPal</a></li>
           <li><a href="https://280af364-1081-4f8f-aa04-107a3f8a6e5c.powerads.me/#">US Address</a></li>
         </ul>
-      </div>
-      <div class="footer-col">
+      </div> -->
+      <!-- <div class="footer-col">
         <h4>Company</h4>
         <ul>
           <li><a href="https://280af364-1081-4f8f-aa04-107a3f8a6e5c.powerads.me/#">About Us</a></li>
@@ -1225,26 +1308,26 @@
           <li><a href="https://280af364-1081-4f8f-aa04-107a3f8a6e5c.powerads.me/#">Careers</a></li>
           <li><a href="https://280af364-1081-4f8f-aa04-107a3f8a6e5c.powerads.me/#">Contact</a></li>
         </ul>
-      </div>
-      <div class="footer-col">
+      </div> -->
+      <!-- <div class="footer-col">
         <h4>Contact</h4>
         <ul>
-          <li><a href="mailto:hello@businessglobalizer.com">hello@businessglobalizer.com</a></li>
+          <li><a href="mailto:sales@businessglobalizer.com">sales@businessglobalizer.com</a></li>
           <li><a href="https://280af364-1081-4f8f-aa04-107a3f8a6e5c.powerads.me/#">Book Free Consultation</a></li>
           <li><a href="https://280af364-1081-4f8f-aa04-107a3f8a6e5c.powerads.me/#">WhatsApp Support</a></li>
           <li><a href="https://280af364-1081-4f8f-aa04-107a3f8a6e5c.powerads.me/#">Help Center</a></li>
           <li><a href="https://280af364-1081-4f8f-aa04-107a3f8a6e5c.powerads.me/#">Privacy Policy</a></li>
           <li><a href="https://280af364-1081-4f8f-aa04-107a3f8a6e5c.powerads.me/#">Terms of Service</a></li>
         </ul>
-      </div>
+      </div> -->
     </div>
     <div class="footer-bottom">
-      <p>© 2024 Business Globalizer. All rights reserved.</p>
-      <div style="display:flex;gap:20px;flex-wrap:wrap;">
+      <p>© 2026 Business Globalizer. All rights reserved.</p>
+      <!-- <div style="display:flex;gap:20px;flex-wrap:wrap;">
         <a href="https://280af364-1081-4f8f-aa04-107a3f8a6e5c.powerads.me/#">Privacy Policy</a>
         <a href="https://280af364-1081-4f8f-aa04-107a3f8a6e5c.powerads.me/#">Terms of Service</a>
         <a href="https://280af364-1081-4f8f-aa04-107a3f8a6e5c.powerads.me/#">Disclaimer</a>
-      </div>
+      </div> -->
     </div>
   </div>
 </footer>
